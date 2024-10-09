@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Oct  9 09:57:53 2024
+# Process ID: 57256
+# Current directory: C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_152A_Lab1/ECE_152A_Lab1.runs/impl_1
+# Command line: vivado.exe -log system_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system_wrapper.tcl -notrace
+# Log file: C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_152A_Lab1/ECE_152A_Lab1.runs/impl_1/system_wrapper.vdi
+# Journal file: C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_152A_Lab1/ECE_152A_Lab1.runs/impl_1\vivado.jou
+# Running On: Ella, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 10, Host memory: 51137 MB
+#-----------------------------------------------------------
+source system_wrapper.tcl -notrace

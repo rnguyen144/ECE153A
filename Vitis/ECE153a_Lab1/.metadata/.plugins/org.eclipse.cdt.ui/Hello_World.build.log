@@ -1,0 +1,51 @@
+16:44:15 **** Incremental Build of configuration Debug for project Hello_World ****
+make all 
+'Building file: ../src/extra.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/extra.o" -IC:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/sw/ECE153a_Lab1/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/extra.d" -MT"src/extra.o" -o "src/extra.o" "../src/extra.c"
+In file included from ../src/extra.h:7,
+                 from ../src/extra.c:1:
+C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/sw/ECE153a_Lab1/standalone_domain/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+      |  ^~~~~~~
+C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/sw/ECE153a_Lab1/standalone_domain/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+  103 | #warning  Please refer the Standalone BSP UG647 for further details
+      |  ^~~~~~~
+'Finished building: ../src/extra.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/sw/ECE153a_Lab1/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/timing.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timing.o" -IC:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/sw/ECE153a_Lab1/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timing.d" -MT"src/timing.o" -o "src/timing.o" "../src/timing.c"
+In file included from ../src/extra.h:7,
+                 from ../src/timing.c:14:
+C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/sw/ECE153a_Lab1/standalone_domain/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+      |  ^~~~~~~
+C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/sw/ECE153a_Lab1/standalone_domain/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+  103 | #warning  Please refer the Standalone BSP UG647 for further details
+      |  ^~~~~~~
+../src/timing.c: In function 'main':
+../src/timing.c:73:31: warning: variable 'Data' set but not used [-Wunused-but-set-variable]
+   73 |         volatile unsigned int Data;
+      |                               ^~~~
+'Finished building: ../src/timing.c'
+' '
+'Building target: Hello_World.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/sw/ECE153a_Lab1/standalone_domain/bsplib/lib -mlittle-endian -mxl-barrel-shift -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Hello_World.elf"  ./src/extra.o ./src/platform.o ./src/timing.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Hello_World.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Hello_World.elf  |tee "Hello_World.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17144	   1444	4198356	4216944	 405870	Hello_World.elf
+'Finished building: Hello_World.elf.size'
+' '
+
+16:44:18 Build Finished (took 3s.566ms)
+

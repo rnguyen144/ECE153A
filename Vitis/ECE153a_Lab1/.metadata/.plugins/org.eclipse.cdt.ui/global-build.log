@@ -1,29 +1,7 @@
 Nothing to build in platform 'ECE153a_Lab1'
 
-16:44:14 **** Clean-only build of configuration Debug for project Hello_World ****
-make clean 
-rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  Hello_World.elf.size  Hello_World.elf
-' '
-16:44:15 **** Incremental Build of configuration Debug for project Hello_World ****
+11:50:24 **** Incremental Build of configuration Debug for project Hello_World ****
 make all 
-'Building file: ../src/extra.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/extra.o" -IC:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/sw/ECE153a_Lab1/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/extra.d" -MT"src/extra.o" -o "src/extra.o" "../src/extra.c"
-In file included from ../src/extra.h:7,
-                 from ../src/extra.c:1:
-C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/sw/ECE153a_Lab1/standalone_domain/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
-  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
-      |  ^~~~~~~
-C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/sw/ECE153a_Lab1/standalone_domain/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
-  103 | #warning  Please refer the Standalone BSP UG647 for further details
-      |  ^~~~~~~
-'Finished building: ../src/extra.c'
-' '
-'Building file: ../src/platform.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/sw/ECE153a_Lab1/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
 'Building file: ../src/timing.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timing.o" -IC:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/sw/ECE153a_Lab1/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timing.d" -MT"src/timing.o" -o "src/timing.o" "../src/timing.c"
@@ -36,9 +14,21 @@ C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1
   103 | #warning  Please refer the Standalone BSP UG647 for further details
       |  ^~~~~~~
 ../src/timing.c: In function 'main':
+../src/timing.c:77:15: warning: unused variable 'b' [-Wunused-variable]
+   77 |         float b = 567.454;
+      |               ^
+../src/timing.c:76:15: warning: unused variable 'a' [-Wunused-variable]
+   76 |         float a = 74.345;
+      |               ^
+../src/timing.c:74:24: warning: unused variable 'Data2' [-Wunused-variable]
+   74 |         volatile float Data2;
+      |                        ^~~~~
 ../src/timing.c:73:31: warning: variable 'Data' set but not used [-Wunused-but-set-variable]
    73 |         volatile unsigned int Data;
       |                               ^~~~
+../src/timing.c:72:13: warning: variable 'Addr' set but not used [-Wunused-but-set-variable]
+   72 |         u32 Addr;
+      |             ^~~~
 'Finished building: ../src/timing.c'
 ' '
 'Building target: Hello_World.elf'
@@ -49,6 +39,6 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/ryand/OneDrive/Documents/Xilinx/E
 'Invoking: MicroBlaze Print Size'
 mb-size Hello_World.elf  |tee "Hello_World.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  17144	   1444	4198356	4216944	 405870	Hello_World.elf
+  15820	   1444	   3792	  21056	   5240	Hello_World.elf
 'Finished building: Hello_World.elf.size'
 ' '

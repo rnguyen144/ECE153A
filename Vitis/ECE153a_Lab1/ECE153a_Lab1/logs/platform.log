@@ -1315,3 +1315,565 @@ TRACE::2024-10-10.16:31:29::SCWMssOS::Checking the sw design at  C:/Users/ryand/
 TRACE::2024-10-10.16:31:29::SCWMssOS::DEBUG:  swdes dump  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss|system||
 
 TRACE::2024-10-10.16:31:29::SCWMssOS::Sw design exists and opened at  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-15.15:13:59::SCWPlatform::Trying to open the hw design at C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:13:59::SCWPlatform::DSA given C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:13:59::SCWPlatform::DSA absoulate path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:14:00::SCWPlatform::DSA directory C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw
+TRACE::2024-10-15.15:14:00::SCWPlatform:: Platform Path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:14:00::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-10-15.15:14:00::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-10-15.15:14:00::SCWPlatform::Opened new HwDB with name system_wrapper
+TRACE::2024-10-15.15:14:00::SCWReader::Active system found as  ECE153a_Lab1
+TRACE::2024-10-15.15:14:00::SCWReader::Handling sysconfig ECE153a_Lab1
+TRACE::2024-10-15.15:14:00::SCWDomain::checking for install qemu data   : 
+TRACE::2024-10-15.15:14:00::SCWPlatform::Trying to open the hw design at C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:14:00::SCWPlatform::DSA given C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:14:00::SCWPlatform::DSA absoulate path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:14:00::SCWPlatform::DSA directory C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw
+TRACE::2024-10-15.15:14:00::SCWPlatform:: Platform Path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:14:00::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-10-15.15:14:00::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2024-10-15.15:14:00::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2024-10-15.15:14:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-15.15:14:00::SCWPlatform::Trying to open the hw design at C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:14:00::SCWPlatform::DSA given C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:14:00::SCWPlatform::DSA absoulate path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:14:00::SCWPlatform::DSA directory C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw
+TRACE::2024-10-15.15:14:00::SCWPlatform:: Platform Path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:14:00::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-10-15.15:14:00::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2024-10-15.15:14:00::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2024-10-15.15:14:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-15.15:14:00::SCWPlatform::Trying to open the hw design at C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:14:00::SCWPlatform::DSA given C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:14:00::SCWPlatform::DSA absoulate path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:14:00::SCWPlatform::DSA directory C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw
+TRACE::2024-10-15.15:14:00::SCWPlatform:: Platform Path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:14:00::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-10-15.15:14:00::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2024-10-15.15:14:00::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2024-10-15.15:14:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-15.15:14:00::SCWPlatform::Trying to open the hw design at C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:14:00::SCWPlatform::DSA given C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:14:00::SCWPlatform::DSA absoulate path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:14:00::SCWPlatform::DSA directory C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw
+TRACE::2024-10-15.15:14:00::SCWPlatform:: Platform Path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:14:00::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-10-15.15:14:00::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2024-10-15.15:14:00::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2024-10-15.15:14:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-15.15:14:00::SCWMssOS::Checking the sw design at  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-15.15:14:00::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-10-15.15:14:00::SCWMssOS::No sw design opened at  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-15.15:14:00::SCWMssOS::mss exists loading the mss file  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-15.15:14:00::SCWMssOS::Opened the sw design from mss  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-15.15:14:00::SCWMssOS::Adding the swdes entry C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2024-10-15.15:14:00::SCWMssOS::updating the scw layer about changes
+TRACE::2024-10-15.15:14:00::SCWMssOS::Opened the sw design.  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-15.15:14:00::SCWPlatform::Trying to open the hw design at C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:14:00::SCWPlatform::DSA given C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:14:00::SCWPlatform::DSA absoulate path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:14:00::SCWPlatform::DSA directory C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw
+TRACE::2024-10-15.15:14:00::SCWPlatform:: Platform Path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:14:00::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-10-15.15:14:00::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2024-10-15.15:14:00::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2024-10-15.15:14:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-15.15:14:00::SCWMssOS::Checking the sw design at  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-15.15:14:00::SCWMssOS::DEBUG:  swdes dump  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-10-15.15:14:00::SCWMssOS::Sw design exists and opened at  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-15.15:14:00::SCWMssOS::Saving the mss changes C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-15.15:14:00::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-10-15.15:14:00::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-10-15.15:14:00::SCWMssOS::Commit changes completed.
+TRACE::2024-10-15.15:14:00::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-10-15.15:14:00::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-10-15.15:14:00::SCWPlatform::Trying to open the hw design at C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:14:00::SCWPlatform::DSA given C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:14:00::SCWPlatform::DSA absoulate path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:14:00::SCWPlatform::DSA directory C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw
+TRACE::2024-10-15.15:14:00::SCWPlatform:: Platform Path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:14:00::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-10-15.15:14:00::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2024-10-15.15:14:00::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2024-10-15.15:14:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-15.15:14:00::SCWMssOS::Checking the sw design at  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-15.15:14:00::SCWMssOS::DEBUG:  swdes dump  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-10-15.15:14:00::SCWMssOS::Sw design exists and opened at  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-15.15:14:00::SCWReader::No isolation master present  
+LOG::2024-10-15.15:23:13::SCWPlatform::Started generating the artifacts platform ECE153a_Lab1
+TRACE::2024-10-15.15:23:13::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-10-15.15:23:13::SCWPlatform::Started generating the artifacts for system configuration ECE153a_Lab1
+LOG::2024-10-15.15:23:13::SCWSystem::Checking the domain standalone_domain
+LOG::2024-10-15.15:23:13::SCWSystem::Not a boot domain 
+LOG::2024-10-15.15:23:13::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2024-10-15.15:23:13::SCWDomain::Generating domain artifcats
+TRACE::2024-10-15.15:23:13::SCWMssOS::Generating standalone artifcats
+TRACE::2024-10-15.15:23:13::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-10-15.15:23:13::SCWPlatform::Trying to open the hw design at C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:23:13::SCWPlatform::DSA given C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:23:13::SCWPlatform::DSA absoulate path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:23:13::SCWPlatform::DSA directory C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw
+TRACE::2024-10-15.15:23:13::SCWPlatform:: Platform Path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:23:13::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-10-15.15:23:13::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2024-10-15.15:23:13::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2024-10-15.15:23:13::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-15.15:23:13::SCWMssOS::Checking the sw design at  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-15.15:23:13::SCWMssOS::DEBUG:  swdes dump  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-10-15.15:23:13::SCWMssOS::Sw design exists and opened at  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-15.15:23:13::SCWMssOS::Completed writing the mss file at C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp
+TRACE::2024-10-15.15:23:13::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-15.15:23:13::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-10-15.15:23:13::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-10-15.15:23:13::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2024-10-15.15:23:13::SCWMssOS::doing bsp build ... 
+TRACE::2024-10-15.15:23:13::SCWMssOS::System Command Ran  C: & cd  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp & make 
+TRACE::2024-10-15.15:23:13::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2024-10-15.15:23:14::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2024-10-15.15:23:14::SCWMssOS::make -j 14 --no-print-directory par_libs
+
+TRACE::2024-10-15.15:23:14::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_7/src"
+
+TRACE::2024-10-15.15:23:14::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-10-15.15:23:14::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -
+TRACE::2024-10-15.15:23:14::SCWMssOS::fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-10-15.15:23:14::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_15/src"
+
+TRACE::2024-10-15.15:23:14::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_15/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-10-15.15:23:14::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -
+TRACE::2024-10-15.15:23:14::SCWMssOS::fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-10-15.15:23:14::SCWMssOS::"Running Make include in microblaze_0/libsrc/gpio_v4_9/src"
+
+TRACE::2024-10-15.15:23:14::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-10-15.15:23:14::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -
+TRACE::2024-10-15.15:23:14::SCWMssOS::fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-10-15.15:23:14::SCWMssOS::"Running Make include in microblaze_0/libsrc/intc_v3_14/src"
+
+TRACE::2024-10-15.15:23:14::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_14/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2024-10-15.15:23:14::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections 
+TRACE::2024-10-15.15:23:14::SCWMssOS::-fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-10-15.15:23:14::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v7_7/src"
+
+TRACE::2024-10-15.15:23:14::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2024-10-15.15:23:14::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sect
+TRACE::2024-10-15.15:23:14::SCWMssOS::ions -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-10-15.15:23:14::SCWMssOS::"Running Make include in microblaze_0/libsrc/tmrctr_v4_9/src"
+
+TRACE::2024-10-15.15:23:14::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2024-10-15.15:23:14::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections
+TRACE::2024-10-15.15:23:14::SCWMssOS:: -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-10-15.15:23:14::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_7/src"
+
+TRACE::2024-10-15.15:23:14::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2024-10-15.15:23:14::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sectio
+TRACE::2024-10-15.15:23:14::SCWMssOS::ns -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-10-15.15:23:15::SCWMssOS::"Running Make libs in microblaze_0/libsrc/bram_v4_7/src"
+
+TRACE::2024-10-15.15:23:15::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2024-10-15.15:23:15::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fda
+TRACE::2024-10-15.15:23:15::SCWMssOS::ta-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-10-15.15:23:15::SCWMssOS::"Running Make libs in microblaze_0/libsrc/cpu_v2_15/src"
+
+TRACE::2024-10-15.15:23:15::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_15/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2024-10-15.15:23:15::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fda
+TRACE::2024-10-15.15:23:15::SCWMssOS::ta-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-10-15.15:23:15::SCWMssOS::"Running Make libs in microblaze_0/libsrc/gpio_v4_9/src"
+
+TRACE::2024-10-15.15:23:15::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2024-10-15.15:23:15::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fda
+TRACE::2024-10-15.15:23:15::SCWMssOS::ta-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-10-15.15:23:15::SCWMssOS::"Running Make libs in microblaze_0/libsrc/intc_v3_14/src"
+
+TRACE::2024-10-15.15:23:15::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_14/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+TRACE::2024-10-15.15:23:15::SCWMssOS::FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fd
+TRACE::2024-10-15.15:23:15::SCWMssOS::ata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-10-15.15:23:15::SCWMssOS::"Running Make libs in microblaze_0/libsrc/standalone_v7_7/src"
+
+TRACE::2024-10-15.15:23:15::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2024-10-15.15:23:15::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-section
+TRACE::2024-10-15.15:23:15::SCWMssOS::s -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-10-15.15:23:15::SCWMssOS::"Running Make libs in microblaze_0/libsrc/tmrctr_v4_9/src"
+
+TRACE::2024-10-15.15:23:15::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+TRACE::2024-10-15.15:23:15::SCWMssOS::_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -f
+TRACE::2024-10-15.15:23:15::SCWMssOS::data-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-10-15.15:23:15::SCWMssOS::"Running Make libs in microblaze_0/libsrc/uartlite_v3_7/src"
+
+TRACE::2024-10-15.15:23:15::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2024-10-15.15:23:15::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections 
+TRACE::2024-10-15.15:23:15::SCWMssOS::-fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-10-15.15:23:15::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2024-10-15.15:23:15::SCWMssOS::make --no-print-directory archive
+
+TRACE::2024-10-15.15:23:15::SCWMssOS::mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/xplatform_info.o microblaze_0/lib/xuartlite.o microblaze_0/lib/microblaze_
+TRACE::2024-10-15.15:23:15::SCWMssOS::disable_exceptions.o microblaze_0/lib/print.o microblaze_0/lib/xtmrctr_options.o microblaze_0/lib/_exit.o microblaze_0/lib/xil_
+TRACE::2024-10-15.15:23:15::SCWMssOS::testio.o microblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/microblaze_flush_dcache_range.o microblaze_0/lib/xuartli
+TRACE::2024-10-15.15:23:15::SCWMssOS::te_sinit.o microblaze_0/lib/microblaze_flush_cache_ext.o microblaze_0/lib/xbram_sinit.o microblaze_0/lib/xil_misc_psreset_api.o
+TRACE::2024-10-15.15:23:15::SCWMssOS:: microblaze_0/lib/xinterrupt_wrap.o microblaze_0/lib/xil_cache.o microblaze_0/lib/xil_util.o microblaze_0/lib/inbyte.o microbla
+TRACE::2024-10-15.15:23:15::SCWMssOS::ze_0/lib/xintc_intr.o microblaze_0/lib/xuartlite_stats.o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/xbram
+TRACE::2024-10-15.15:23:15::SCWMssOS::_g.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/lib/microblaze_disable_in
+TRACE::2024-10-15.15:23:15::SCWMssOS::terrupts.o microblaze_0/lib/xbram_selftest.o microblaze_0/lib/microblaze_interrupt_handler.o microblaze_0/lib/microblaze_disabl
+TRACE::2024-10-15.15:23:15::SCWMssOS::e_icache.o microblaze_0/lib/xgpio_g.o microblaze_0/lib/xil_mem.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze
+TRACE::2024-10-15.15:23:15::SCWMssOS::_0/lib/xtmrctr_intr.o microblaze_0/lib/xbram_intr.o microblaze_0/lib/xil_sleepcommon.o microblaze_0/lib/xil_printf.o microblaze
+TRACE::2024-10-15.15:23:15::SCWMssOS::_0/lib/xintc_g.o microblaze_0/lib/xuartlite_g.o microblaze_0/lib/xtmrctr_l.o microblaze_0/lib/xintc_selftest.o microblaze_0/lib
+TRACE::2024-10-15.15:23:15::SCWMssOS::/xintc_l.o microblaze_0/lib/outbyte.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/xgpio_intr.o microblaze_
+TRACE::2024-10-15.15:23:15::SCWMssOS::0/lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_invalidate_cache_ext.o microblaze_0/lib/microblaze_sleep
+TRACE::2024-10-15.15:23:15::SCWMssOS::.o microblaze_0/lib/hw_exception_handler.o microblaze_0/lib/xtmrctr.o microblaze_0/lib/xuartlite_selftest.o microblaze_0/lib/xg
+TRACE::2024-10-15.15:23:15::SCWMssOS::pio_sinit.o microblaze_0/lib/microblaze_update_dcache.o microblaze_0/lib/xil_testcache.o microblaze_0/lib/microblaze_selftest.o
+TRACE::2024-10-15.15:23:15::SCWMssOS:: microblaze_0/lib/microblaze_interrupts_g.o microblaze_0/lib/xio.o microblaze_0/lib/xtmrctr_g.o microblaze_0/lib/microblaze_ena
+TRACE::2024-10-15.15:23:15::SCWMssOS::ble_dcache.o microblaze_0/lib/xbram.o microblaze_0/lib/microblaze_invalidate_icache_range.o microblaze_0/lib/xtmrctr_selftest.o
+TRACE::2024-10-15.15:23:15::SCWMssOS:: microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_invalidate_icache.o microblaze_0/lib/errno.o micro
+TRACE::2024-10-15.15:23:15::SCWMssOS::blaze_0/lib/xuartlite_l.o microblaze_0/lib/xintc_options.o microblaze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_
+TRACE::2024-10-15.15:23:15::SCWMssOS::0/lib/xil_exception.o microblaze_0/lib/pvr.o microblaze_0/lib/xgpio.o microblaze_0/lib/xil_testmem.o microblaze_0/lib/microblaz
+TRACE::2024-10-15.15:23:15::SCWMssOS::e_update_icache.o microblaze_0/lib/xuartlite_intr.o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/xil_clocking.o 
+TRACE::2024-10-15.15:23:15::SCWMssOS::microblaze_0/lib/xil_assert.o microblaze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/xgpio_extra.o microblaze_0/lib/m
+TRACE::2024-10-15.15:23:15::SCWMssOS::icroblaze_enable_icache.o microblaze_0/lib/xintc.o microblaze_0/lib/xtmrctr_stats.o microblaze_0/lib/microblaze_init_icache_ran
+TRACE::2024-10-15.15:23:15::SCWMssOS::ge.o microblaze_0/lib/xtmrctr_sinit.o microblaze_0/lib/fcntl.o microblaze_0/lib/xgpio_selftest.o
+
+TRACE::2024-10-15.15:23:16::SCWMssOS::'Finished building libraries'
+
+TRACE::2024-10-15.15:23:16::SCWMssOS::Copying to export directory.
+TRACE::2024-10-15.15:23:16::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-10-15.15:23:16::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-10-15.15:23:16::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2024-10-15.15:23:16::SCWSystem::Completed Processing the sysconfig ECE153a_Lab1
+LOG::2024-10-15.15:23:16::SCWPlatform::Completed generating the artifacts for system configuration ECE153a_Lab1
+TRACE::2024-10-15.15:23:16::SCWPlatform::Started preparing the platform 
+TRACE::2024-10-15.15:23:16::SCWSystem::Writing the bif file for system config ECE153a_Lab1
+TRACE::2024-10-15.15:23:16::SCWSystem::dir created 
+TRACE::2024-10-15.15:23:16::SCWSystem::Writing the bif 
+TRACE::2024-10-15.15:23:16::SCWPlatform::Started writing the spfm file 
+TRACE::2024-10-15.15:23:16::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-10-15.15:23:16::SCWPlatform::Completed generating the platform
+TRACE::2024-10-15.15:23:16::SCWMssOS::Saving the mss changes C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-15.15:23:16::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-10-15.15:23:16::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-10-15.15:23:16::SCWMssOS::Commit changes completed.
+TRACE::2024-10-15.15:23:16::SCWPlatform::Trying to open the hw design at C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:23:16::SCWPlatform::DSA given C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:23:16::SCWPlatform::DSA absoulate path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:23:16::SCWPlatform::DSA directory C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw
+TRACE::2024-10-15.15:23:16::SCWPlatform:: Platform Path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:23:16::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-10-15.15:23:16::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2024-10-15.15:23:16::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2024-10-15.15:23:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-15.15:23:16::SCWMssOS::Checking the sw design at  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-15.15:23:16::SCWMssOS::DEBUG:  swdes dump  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-10-15.15:23:16::SCWMssOS::Sw design exists and opened at  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-15.15:23:16::SCWWriter::formatted JSON is {
+	"platformName":	"ECE153a_Lab1",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"ECE153a_Lab1",
+	"platHandOff":	"C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_152A_Lab1/system_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/system_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"ECE153a_Lab1",
+	"systems":	[{
+			"systemName":	"ECE153a_Lab1",
+			"systemDesc":	"ECE153a_Lab1",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"ECE153a_Lab1",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.7",
+					"mssFile":	"",
+					"md5Digest":	"cec8119290ad086884dd157461b2432e",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"changedDrivers":	{
+						"sevenSeg_0":	"generic:3.0",
+						"changedCells":	["sevenSeg_0"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-10-15.15:23:16::SCWPlatform::updated the xpfm file.
+TRACE::2024-10-15.15:23:16::SCWPlatform::Trying to open the hw design at C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:23:16::SCWPlatform::DSA given C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:23:16::SCWPlatform::DSA absoulate path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:23:16::SCWPlatform::DSA directory C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw
+TRACE::2024-10-15.15:23:16::SCWPlatform:: Platform Path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-15.15:23:16::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-10-15.15:23:16::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2024-10-15.15:23:16::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2024-10-15.15:23:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-15.15:23:16::SCWMssOS::Checking the sw design at  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-15.15:23:16::SCWMssOS::DEBUG:  swdes dump  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-10-15.15:23:16::SCWMssOS::Sw design exists and opened at  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-17.15:35:23::SCWPlatform::Trying to open the hw design at C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform::DSA given C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform::DSA absoulate path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform::DSA directory C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw
+TRACE::2024-10-17.15:35:23::SCWPlatform:: Platform Path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-10-17.15:35:23::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-10-17.15:35:23::SCWPlatform::Opened new HwDB with name system_wrapper
+TRACE::2024-10-17.15:35:23::SCWReader::Active system found as  ECE153a_Lab1
+TRACE::2024-10-17.15:35:23::SCWReader::Handling sysconfig ECE153a_Lab1
+TRACE::2024-10-17.15:35:23::SCWDomain::checking for install qemu data   : 
+TRACE::2024-10-17.15:35:23::SCWPlatform::Trying to open the hw design at C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform::DSA given C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform::DSA absoulate path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform::DSA directory C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw
+TRACE::2024-10-17.15:35:23::SCWPlatform:: Platform Path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-10-17.15:35:23::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2024-10-17.15:35:23::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2024-10-17.15:35:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-17.15:35:23::SCWPlatform::Trying to open the hw design at C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform::DSA given C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform::DSA absoulate path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform::DSA directory C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw
+TRACE::2024-10-17.15:35:23::SCWPlatform:: Platform Path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-10-17.15:35:23::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2024-10-17.15:35:23::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2024-10-17.15:35:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-17.15:35:23::SCWPlatform::Trying to open the hw design at C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform::DSA given C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform::DSA absoulate path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform::DSA directory C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw
+TRACE::2024-10-17.15:35:23::SCWPlatform:: Platform Path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-10-17.15:35:23::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2024-10-17.15:35:23::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2024-10-17.15:35:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-17.15:35:23::SCWPlatform::Trying to open the hw design at C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform::DSA given C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform::DSA absoulate path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform::DSA directory C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw
+TRACE::2024-10-17.15:35:23::SCWPlatform:: Platform Path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-10-17.15:35:23::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2024-10-17.15:35:23::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2024-10-17.15:35:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-17.15:35:23::SCWMssOS::Checking the sw design at  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-17.15:35:23::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-10-17.15:35:23::SCWMssOS::No sw design opened at  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-17.15:35:23::SCWMssOS::mss exists loading the mss file  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-17.15:35:23::SCWMssOS::Opened the sw design from mss  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-17.15:35:23::SCWMssOS::Adding the swdes entry C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2024-10-17.15:35:23::SCWMssOS::updating the scw layer about changes
+TRACE::2024-10-17.15:35:23::SCWMssOS::Opened the sw design.  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-17.15:35:23::SCWPlatform::Trying to open the hw design at C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform::DSA given C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform::DSA absoulate path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform::DSA directory C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw
+TRACE::2024-10-17.15:35:23::SCWPlatform:: Platform Path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-10-17.15:35:23::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2024-10-17.15:35:23::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2024-10-17.15:35:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-17.15:35:23::SCWMssOS::Checking the sw design at  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-17.15:35:23::SCWMssOS::DEBUG:  swdes dump  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-10-17.15:35:23::SCWMssOS::Sw design exists and opened at  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-17.15:35:23::SCWMssOS::Saving the mss changes C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-17.15:35:23::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-10-17.15:35:23::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-10-17.15:35:23::SCWMssOS::Commit changes completed.
+TRACE::2024-10-17.15:35:23::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-10-17.15:35:23::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-10-17.15:35:23::SCWPlatform::Trying to open the hw design at C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform::DSA given C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform::DSA absoulate path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform::DSA directory C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw
+TRACE::2024-10-17.15:35:23::SCWPlatform:: Platform Path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:23::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-10-17.15:35:23::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2024-10-17.15:35:23::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2024-10-17.15:35:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-17.15:35:23::SCWMssOS::Checking the sw design at  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-17.15:35:23::SCWMssOS::DEBUG:  swdes dump  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-10-17.15:35:23::SCWMssOS::Sw design exists and opened at  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-17.15:35:23::SCWReader::No isolation master present  
+LOG::2024-10-17.15:35:33::SCWPlatform::Started generating the artifacts platform ECE153a_Lab1
+TRACE::2024-10-17.15:35:33::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-10-17.15:35:33::SCWPlatform::Started generating the artifacts for system configuration ECE153a_Lab1
+LOG::2024-10-17.15:35:33::SCWSystem::Checking the domain standalone_domain
+LOG::2024-10-17.15:35:33::SCWSystem::Not a boot domain 
+LOG::2024-10-17.15:35:33::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2024-10-17.15:35:33::SCWDomain::Generating domain artifcats
+TRACE::2024-10-17.15:35:33::SCWMssOS::Generating standalone artifcats
+TRACE::2024-10-17.15:35:33::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-10-17.15:35:33::SCWPlatform::Trying to open the hw design at C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:33::SCWPlatform::DSA given C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:33::SCWPlatform::DSA absoulate path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:33::SCWPlatform::DSA directory C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw
+TRACE::2024-10-17.15:35:33::SCWPlatform:: Platform Path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-10-17.15:35:33::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2024-10-17.15:35:33::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2024-10-17.15:35:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-17.15:35:33::SCWMssOS::Checking the sw design at  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-17.15:35:33::SCWMssOS::DEBUG:  swdes dump  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-10-17.15:35:33::SCWMssOS::Sw design exists and opened at  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-17.15:35:33::SCWMssOS::Completed writing the mss file at C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp
+TRACE::2024-10-17.15:35:33::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-17.15:35:33::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-10-17.15:35:33::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-10-17.15:35:33::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2024-10-17.15:35:33::SCWMssOS::skipping the bsp build ... 
+TRACE::2024-10-17.15:35:33::SCWMssOS::Copying to export directory.
+TRACE::2024-10-17.15:35:33::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-10-17.15:35:33::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-10-17.15:35:33::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2024-10-17.15:35:33::SCWSystem::Completed Processing the sysconfig ECE153a_Lab1
+LOG::2024-10-17.15:35:33::SCWPlatform::Completed generating the artifacts for system configuration ECE153a_Lab1
+TRACE::2024-10-17.15:35:33::SCWPlatform::Started preparing the platform 
+TRACE::2024-10-17.15:35:33::SCWSystem::Writing the bif file for system config ECE153a_Lab1
+TRACE::2024-10-17.15:35:33::SCWSystem::dir created 
+TRACE::2024-10-17.15:35:33::SCWSystem::Writing the bif 
+TRACE::2024-10-17.15:35:33::SCWPlatform::Started writing the spfm file 
+TRACE::2024-10-17.15:35:33::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-10-17.15:35:33::SCWPlatform::Completed generating the platform
+TRACE::2024-10-17.15:35:33::SCWMssOS::Saving the mss changes C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-17.15:35:33::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-10-17.15:35:33::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-10-17.15:35:33::SCWMssOS::Commit changes completed.
+TRACE::2024-10-17.15:35:33::SCWPlatform::Trying to open the hw design at C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:33::SCWPlatform::DSA given C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:33::SCWPlatform::DSA absoulate path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:33::SCWPlatform::DSA directory C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw
+TRACE::2024-10-17.15:35:33::SCWPlatform:: Platform Path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-10-17.15:35:33::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2024-10-17.15:35:33::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2024-10-17.15:35:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-17.15:35:33::SCWMssOS::Checking the sw design at  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-17.15:35:33::SCWMssOS::DEBUG:  swdes dump  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-10-17.15:35:33::SCWMssOS::Sw design exists and opened at  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-17.15:35:33::SCWWriter::formatted JSON is {
+	"platformName":	"ECE153a_Lab1",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"ECE153a_Lab1",
+	"platHandOff":	"C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_152A_Lab1/system_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/system_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"ECE153a_Lab1",
+	"systems":	[{
+			"systemName":	"ECE153a_Lab1",
+			"systemDesc":	"ECE153a_Lab1",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"ECE153a_Lab1",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.7",
+					"mssFile":	"",
+					"md5Digest":	"cec8119290ad086884dd157461b2432e",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"changedDrivers":	{
+						"sevenSeg_0":	"generic:3.0",
+						"changedCells":	["sevenSeg_0"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-10-17.15:35:33::SCWPlatform::updated the xpfm file.
+TRACE::2024-10-17.15:35:33::SCWPlatform::Trying to open the hw design at C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:33::SCWPlatform::DSA given C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:33::SCWPlatform::DSA absoulate path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:33::SCWPlatform::DSA directory C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw
+TRACE::2024-10-17.15:35:33::SCWPlatform:: Platform Path C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/hw/system_wrapper.xsa
+TRACE::2024-10-17.15:35:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-10-17.15:35:33::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2024-10-17.15:35:33::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2024-10-17.15:35:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-17.15:35:33::SCWMssOS::Checking the sw design at  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-17.15:35:33::SCWMssOS::DEBUG:  swdes dump  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-10-17.15:35:33::SCWMssOS::Sw design exists and opened at  C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/microblaze_0/standalone_domain/bsp/system.mss

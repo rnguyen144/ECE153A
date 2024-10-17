@@ -13,54 +13,98 @@
 #include "xil_printf.h" 	// Used for xil_printf()
 #include "extra.h" 		// Provides a source of bus contention
 #include "xgpio.h" 		// LED driver, used for General purpose I/i
+#include "sevenSeg_new.h" // Seven Segment Display Driver
+// #include "xscugic.h"
 
-#define NUMBER_OF_TRIALS 100
+#define NUMBER_OF_TRIALS 1000
 #define NUMBER_OF_BINS 100
 #define BUFFER_SIZE (1024*1024)
 unsigned int buffer[BUFFER_SIZE]; //buffer for read/write operations to the DDR memory
 
-/*
- * The following constant is used to determine which channel of the GPIO is
- * used for the LED if there are 2 channels supported.
- */
-#define LED_CHANNEL 1
+int c = 0;
 
-void histogram(void); // This function creates a histogram for the measured data
 
-/*
- * The following are declared globally so they are zeroed and so they are
- * easily accessible from a debugger
- */
-XGpio Gpio; /* The Instance of the GPIO Driver used for LED 0 */
+//timer init and callback init
 
-/*
- * This globally declared array stores the
- * number of clock cycles for all the trials.
- * With global declaration, it is stored in the data segment of the
- * memory. Declaring this large array locally may cause a stack overflow.
- */
-int numClockCycles[NUMBER_OF_TRIALS];
+XGpio BtnGpio;
+XIntc InterruptController;
 
-//Stores the number of samples in each bin
-int histData[NUMBER_OF_BINS];
+
 
 //BaseAddr points to the base (byte) address of the DDR2 Memory
 u8 * BaseAddr = (u8 *) XPAR_MIG7SERIES_0_BASEADDR;
 
-/*
- * REPEAT is a somewhat dangerous macro that makes multiple statements from an
- * input string. The danger is statements like if() without {}... Here this is
- * no problem, but beware if you use it elsewhere -- macro bugs are often very
- * hard to debug.
- */
-#define REPEAT_5(X) X;X;X;X;X
-#define REPEAT_10(X) REPEAT_5(X);REPEAT_5(X)
-#define REPEAT_15(X) REPEAT_10(X);REPEAT_5(X)
-#define REPEAT_20(X) REPEAT_15(X);REPEAT_5(X)
-#define REPEAT_25(X) REPEAT_20(X);REPEAT_5(X)
-#define REPEAT_40(X) REPEAT_15(X);REPEAT_25(X)
+void GpioInterruptHandler(void *CallbackRef) {
+    u32 btn_value;
+    
+    // Read the GPIO status
+    btn_value = XGpio_DiscreteRead(&BtnGpio, 1);
+    
+    // Clear the interrupt status by reading the interrupt status register
+    XGpio_InterruptClear(&BtnGpio, 1);
+
+    // Perform actions based on the button press
+    if (btn_value&1) {
+        xil_printf("Button 1 pressed!\n\r");
+    } else if (btn_value & 0x2) {
+        xil_printf("Button 2 pressed!\n\r");
+	} else if (btn_value & 0x4) {
+        xil_printf("Button 3 pressed!\n\r");
+	} else if (btn_value & 8) {
+        xil_printf("Button 4 pressed!\n\r");
+	} else if (btn_value &16) {
+        xil_printf("Button 5 pressed!\n\r");
+	} else if (btn_value &32) {
+        xil_printf("Button 6 pressed!\n\r");
+	} else if (btn_value &64) {
+        xil_printf("Button 7 pressed!\n\r");
+    }
+    // Add more cases for additional buttons if necessary
+}
+
+// Setup Interrupt System
+int SetupInterruptSystem(XIntc *IntcInstancePtr) {
+    int Status;
+
+    // Initialize the interrupt controller driver
+    Status = XIntc_Initialize(IntcInstancePtr, INTC_DEVICE_ID);
+    if (Status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    // Connect the GPIO interrupt handler to the interrupt system
+    Status = XIntc_Connect(IntcInstancePtr, XPAR_INTC_0_GPIO_0_VEC_ID,
+                           (XInterruptHandler)GpioInterruptHandler,
+                           &BtnGpio);
+    if (Status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    // Start the interrupt controller in real mode
+    Status = XIntc_Start(IntcInstancePtr, XIN_REAL_MODE);
+    if (Status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    // Enable the interrupt for the GPIO device
+    XGpio_InterruptEnable(&BtnGpio, 1);
+    XGpio_InterruptGlobalEnable(&BtnGpio);
+
+    // Enable the interrupt in the interrupt controller
+    XIntc_Enable(IntcInstancePtr, XPAR_INTC_0_GPIO_0_VEC_ID);
+
+    // Enable interrupts in the processor
+    Xil_ExceptionInit();
+    Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+                                 (Xil_ExceptionHandler)XIntc_InterruptHandler,
+                                 IntcInstancePtr);
+    Xil_ExceptionEnable();
+
+    return XST_SUCCESS;
+}
 
 int main() {
+	int Status;
     // Caches enabled here -- Diasble if you want alternate measurements
 	Xil_ICacheInvalidate();
 	Xil_ICacheEnable();
@@ -71,16 +115,48 @@ int main() {
 	int timer_val_before; //Used to store the timer value before executing the operation being timed
 	u32 Addr;
 	volatile unsigned int Data;
-	volatile float Data2;
-	int sum = 0;
-	float a = 74.345;
-	float b = 567.454;
-	int c = 34;
-	int d = 45;
-	Xboolean led = 1;
+
+	//timer interupt
+	// print("---XIntc_Initialize---\n\r");
+	// XIntc_Initialize(&timer_ctrl, XPAR_MICROBLAZE_0_AXI_INTC_DEVICE_ID);
+	// print("---XIntc_Connect---\n\r");
+	// XIntc_ConnectXIntc_Connect(&timer_ctrl, XPAR_MICROBLAZE_0_AXI_INTC_AXI_TIMER_0_INTERRUPT_INTR, (XInterruptHandler) timer_callback, &timer);
+	// print("---XIntc_Start---\n\r");
+	// XIntc_Start(&timer_ctrl, XIN_REAL_MODE);
+	// print("---XIntc_Enable---\n\r");
+	// XIntc_Enable(&timer_ctrl, XPAR_MICROBLAZE_0_AXI_INTC_AXI_TIMER_0_INTERRUPT_INTR);
+	// print("---XTmrCtr_Initialize---\n\r");
+	// XTmrCtr_Initialize(&timer, XPAR_MICROBLAZE_0_AXI_INTC_DEVICE_ID);
+	// print("---XTmrCtr_SetOptions---\n\r");
+	// XTmrCtr_SetOptions(&timer, 0, XTC_INT_MODE_OPTION | XTC_AUTO_RELOAD_OPTION);
+	// print("---XTmrCtr_SetResetValue---\n\r");
+	// XTmrCtr_SetResetValue(&timer, 0, 0xFFFFFFFF - RESET_VALUE);
+	// print("---XTmrCtr_Start---\n\r");
+	// XTmrCtr_Start(&timer, 0);
+	// extra_method();
+
+
+	XGpio_Initialize(&BtnGpio, XPAR_AXI_GPIO_BTN_DEVICE_ID);
+
+	
+	Status = SetupInterruptSystem(&InterruptController);
+    if (Status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+	extra_method();
+
+	while(1){
+		//sevenseg_draw_digit(5,0);
+
+		//printf("GPIO Value: %08b\n", XGpio_DiscreteRead(&BtnGpio, 1));
+	}
+
+
+
 
 	// Extra Method contains an interrupt routine which is set to go off at timed intervals
-	extra_method();
+	//extra_method();
 
 	//TIMER RESET CODE
 	//Turn off the timer
@@ -93,96 +169,4 @@ int main() {
 	XTmrCtr_SetControlStatusReg(XPAR_TMRCTR_0_BASEADDR, 1,
 			XTC_CSR_ENABLE_TMR_MASK);
 	//END TIMER RESET CODE
-
-	//INITIALIZATION FOR AXI GPIO LED PORT
-	XGpio_Initialize(&Gpio, XPAR_AXI_GPIO_LED_DEVICE_ID);
-
-	for (i = 0; i < NUMBER_OF_TRIALS; i++) {
-
-		Addr = rand() % BUFFER_SIZE; //Will be used to access a random buffer index
-
-		//Store the timer value before executing the operation being timed
-		led = !led;
-		timer_val_before = XTmrCtr_GetTimerCounterReg(XPAR_TMRCTR_0_BASEADDR, 1);
-
-		// Enter the line of Code to time.
-		Data = c+d;
-//		Data2 = a+b;
-//		 XGpio_DiscreteWrite(&Gpio, 1, led);
-//		 Data = buffer[Addr];
-//		 printf("%f\n", a);
-//		xil_printf("QWERTYUIOP\n\r");
-
-		// REPEAT_5(Data = buffer[Addr]);
-
-
-		//XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, 0x1); //Turns on one LED
-
-		numClockCycles[i] =
-		XTmrCtr_GetTimerCounterReg(XPAR_TMRCTR_0_BASEADDR, 1)
-				- timer_val_before; //Stores the time to execute the operation
-
-	}
-
-	//Prints the collected data
-	
-	 for (i = 0; i < NUMBER_OF_TRIALS; i++) {
-	 	sum += numClockCycles[i];
-////		 xil_printf("%d,%d\n\r", i, numClockCycles[i]);
-		xil_printf("%d,\n\r",numClockCycles[i]);
-	 }
-	 xil_printf("Average: %d\n\r", sum / NUMBER_OF_TRIALS);
-
-//	histogram(); //Creates a histogram for the measured data
-
 }
-
-/*
- *
- * histogram is a function that runs locally to reduce the data for longer tests
- * i.e. you don't want to copy 10,000 values
- * you need to modify it for your own use to make the output statistically valuable
- */
-void histogram(void) {
-
-	int min, max, binSize, binIndex;
-
-	int i;
-
-	//min and max initialized
-	min = numClockCycles[0];
-	max = numClockCycles[0];
-
-	//find the min and max values
-	for (i = 0; i < NUMBER_OF_TRIALS; i++) {
-		if (numClockCycles[i] < min)
-			min = numClockCycles[i];
-		if (numClockCycles[i] > max)
-			max = numClockCycles[i];
-	}
-
-	binSize = (max - min) / NUMBER_OF_BINS;
-
-	//Bin number for each data element is found here
-	for (i = 0; i < NUMBER_OF_TRIALS; i++) {
-		binIndex = 0;
-		if (binSize > 0) {
-			binIndex = (numClockCycles[i] - min) / binSize;
-			if (binIndex >= NUMBER_OF_BINS)
-				binIndex = NUMBER_OF_BINS - 1;
-			histData[binIndex]++;
-		} else {
-			//if there is no variance in the data all values are assigned to bin 0
-			histData[0] = NUMBER_OF_TRIALS;
-			break;
-		}
-	}
-	//Prints the number of elements in each bin
-	for (i = 0; i < NUMBER_OF_BINS; i++) {
-		xil_printf("Bin %d: %d\n\r", i, histData[i]);
-	}
-
-	xil_printf("Done!\n\r");
-
-}
-

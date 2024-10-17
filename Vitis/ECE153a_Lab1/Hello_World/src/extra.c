@@ -20,6 +20,11 @@ void extra_handler() {
 	// xil_printf("Timer interrupt occurred. Count= %d\r\n", count);
 	// XGpio_DiscreteWrite(&led,1,count);
 	count++;			// increment count
+
+	if(count >= 9){
+		count=0;
+	}
+	sevenseg_draw_digit(5,count);
 	/*
 	 * Acknowledge the interrupt by clearing the interrupt
 	 * bit in the timer control status register
@@ -72,6 +77,10 @@ int extra_method() {
 		return XST_FAILURE;
 	}
 	xil_printf("Connected to Interrupt Controller!\r\n");
+
+	
+
+
 
 	/*
 	 * Start the interrupt controller such that interrupts are enabled for

@@ -21,3 +21,7 @@ bsp write
 bsp reload
 catch {bsp regenerate}
 platform generate
+platform active {ECE153a_Lab1}
+platform generate
+platform active {ECE153a_Lab1}
+platform generate -domains 

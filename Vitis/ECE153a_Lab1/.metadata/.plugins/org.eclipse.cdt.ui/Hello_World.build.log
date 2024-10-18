@@ -1,28 +1,26 @@
-16:18:08 **** Incremental Build of configuration Debug for project Hello_World ****
+15:57:54 **** Incremental Build of configuration Debug for project Hello_World ****
 make all 
 'Building file: ../src/timing.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timing.o" -IC:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/sw/ECE153a_Lab1/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timing.d" -MT"src/timing.o" -o "src/timing.o" "../src/timing.c"
-In file included from ../src/extra.h:7,
-                 from ../src/timing.c:14:
-C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/sw/ECE153a_Lab1/standalone_domain/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
-  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
-      |  ^~~~~~~
-C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/sw/ECE153a_Lab1/standalone_domain/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
-  103 | #warning  Please refer the Standalone BSP UG647 for further details
-      |  ^~~~~~~
 ../src/timing.c: In function 'main':
-../src/timing.c:117:31: warning: unused variable 'Data' [-Wunused-variable]
-  117 |         volatile unsigned int Data;
+../src/timing.c:265:42: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+  265 |                                 printf("%d\n\r",cycle_count);
+      |                                         ~^      ~~~~~~~~~~~
+      |                                          |      |
+      |                                          int    u32 {aka long unsigned int}
+      |                                         %ld
+../src/timing.c:190:31: warning: unused variable 'Data' [-Wunused-variable]
+  190 |         volatile unsigned int Data;
       |                               ^~~~
-../src/timing.c:116:13: warning: unused variable 'Addr' [-Wunused-variable]
-  116 |         u32 Addr;
+../src/timing.c:189:13: warning: unused variable 'Addr' [-Wunused-variable]
+  189 |         u32 Addr;
       |             ^~~~
-../src/timing.c:115:13: warning: unused variable 'timer_val_before' [-Wunused-variable]
-  115 |         int timer_val_before; //Used to store the timer value before executing the operation being timed
+../src/timing.c:188:13: warning: unused variable 'timer_val_before' [-Wunused-variable]
+  188 |         int timer_val_before; //Used to store the timer value before executing the operation being timed
       |             ^~~~~~~~~~~~~~~~
-../src/timing.c:114:13: warning: unused variable 'i' [-Wunused-variable]
-  114 |         int i = 0;
+../src/timing.c:187:13: warning: unused variable 'i' [-Wunused-variable]
+  187 |         u32 i = 0;
       |             ^
 'Finished building: ../src/timing.c'
 ' '
@@ -34,9 +32,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/ryand/OneDrive/Documents/Xilinx/E
 'Invoking: MicroBlaze Print Size'
 mb-size Hello_World.elf  |tee "Hello_World.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  12792	    404	   8468	  21664	   54a0	Hello_World.elf
+  73684	   1812	   8568	  84064	  14860	Hello_World.elf
 'Finished building: Hello_World.elf.size'
 ' '
 
-16:18:08 Build Finished (took 825ms)
+15:57:57 Build Finished (took 2s.383ms)
 

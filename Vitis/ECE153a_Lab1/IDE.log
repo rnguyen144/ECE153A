@@ -5578,3 +5578,1729 @@ con
 ----------------End of Script----------------
 
 16:18:33 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+13:00:51 INFO  : Disconnected from the channel tcfchan#13.
+13:00:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:01:11 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+13:01:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+13:01:11 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+13:01:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:01:25 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BD0126A' is selected.
+13:01:25 INFO  : 'jtag frequency' command is executed.
+13:01:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BD0126A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BD0126A-13631093-0"}' command is executed.
+13:01:27 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+13:01:28 INFO  : Context for processor 'microblaze_0' is selected.
+13:01:28 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+13:01:28 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:01:28 INFO  : Context for processor 'microblaze_0' is selected.
+13:01:28 INFO  : System reset is completed.
+13:01:31 INFO  : 'after 3000' command is executed.
+13:01:31 INFO  : Context for processor 'microblaze_0' is selected.
+13:01:31 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+13:01:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BD0126A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BD0126A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+13:01:31 INFO  : Context for processor 'microblaze_0' is selected.
+13:01:31 INFO  : 'con' command is executed.
+13:01:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:01:31 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+13:12:00 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+13:12:06 INFO  : Disconnected from the channel tcfchan#14.
+13:12:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:12:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+13:12:17 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+13:12:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:12:20 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+13:12:20 INFO  : 'jtag frequency' command is executed.
+13:12:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+13:12:23 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+13:12:23 INFO  : Context for processor 'microblaze_0' is selected.
+13:12:23 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+13:12:23 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:12:23 INFO  : Context for processor 'microblaze_0' is selected.
+13:12:23 INFO  : System reset is completed.
+13:12:26 INFO  : 'after 3000' command is executed.
+13:12:26 INFO  : Context for processor 'microblaze_0' is selected.
+13:12:26 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+13:12:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+13:12:26 INFO  : Context for processor 'microblaze_0' is selected.
+13:12:26 INFO  : 'con' command is executed.
+13:12:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:12:26 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+13:18:58 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+13:19:24 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+13:19:30 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+13:20:03 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+13:22:10 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+13:22:27 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+13:23:11 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+13:23:17 INFO  : Disconnected from the channel tcfchan#15.
+13:23:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:23:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+13:23:28 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+13:23:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:23:31 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+13:23:31 INFO  : 'jtag frequency' command is executed.
+13:23:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+13:23:33 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+13:23:33 INFO  : Context for processor 'microblaze_0' is selected.
+13:23:33 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+13:23:33 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:23:34 INFO  : Context for processor 'microblaze_0' is selected.
+13:23:34 INFO  : System reset is completed.
+13:23:37 INFO  : 'after 3000' command is executed.
+13:23:37 INFO  : Context for processor 'microblaze_0' is selected.
+13:23:37 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+13:23:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+13:23:37 INFO  : Context for processor 'microblaze_0' is selected.
+13:23:37 INFO  : 'con' command is executed.
+13:23:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:23:37 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+13:25:39 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+13:25:48 INFO  : Disconnected from the channel tcfchan#16.
+13:25:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:25:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+13:25:58 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+13:26:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:26:01 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+13:26:01 INFO  : 'jtag frequency' command is executed.
+13:26:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+13:26:03 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+13:26:03 INFO  : Context for processor 'microblaze_0' is selected.
+13:26:04 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+13:26:04 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:26:04 INFO  : Context for processor 'microblaze_0' is selected.
+13:26:04 INFO  : System reset is completed.
+13:26:07 INFO  : 'after 3000' command is executed.
+13:26:07 INFO  : Context for processor 'microblaze_0' is selected.
+13:26:07 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+13:26:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+13:26:07 INFO  : Context for processor 'microblaze_0' is selected.
+13:26:07 INFO  : 'con' command is executed.
+13:26:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:26:07 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+13:27:28 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+13:27:33 INFO  : Disconnected from the channel tcfchan#17.
+13:27:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:27:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+13:27:43 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+13:27:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:27:46 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+13:27:46 INFO  : 'jtag frequency' command is executed.
+13:27:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+13:27:48 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+13:27:48 INFO  : Context for processor 'microblaze_0' is selected.
+13:27:48 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+13:27:48 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:27:48 INFO  : Context for processor 'microblaze_0' is selected.
+13:27:48 INFO  : System reset is completed.
+13:27:51 INFO  : 'after 3000' command is executed.
+13:27:51 INFO  : Context for processor 'microblaze_0' is selected.
+13:27:52 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+13:27:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+13:27:52 INFO  : Context for processor 'microblaze_0' is selected.
+13:27:52 INFO  : 'con' command is executed.
+13:27:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:27:52 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+13:28:18 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+13:28:27 INFO  : Disconnected from the channel tcfchan#18.
+13:28:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:28:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+13:28:37 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+13:28:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:28:40 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+13:28:40 INFO  : 'jtag frequency' command is executed.
+13:28:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+13:28:42 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+13:28:42 INFO  : Context for processor 'microblaze_0' is selected.
+13:28:42 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+13:28:42 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:28:42 INFO  : Context for processor 'microblaze_0' is selected.
+13:28:42 INFO  : System reset is completed.
+13:28:45 INFO  : 'after 3000' command is executed.
+13:28:45 INFO  : Context for processor 'microblaze_0' is selected.
+13:28:45 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+13:28:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+13:28:46 INFO  : Context for processor 'microblaze_0' is selected.
+13:28:46 INFO  : 'con' command is executed.
+13:28:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:28:46 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+13:30:43 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+13:40:15 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+13:40:21 INFO  : Disconnected from the channel tcfchan#19.
+13:40:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:40:23 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+13:40:23 INFO  : 'jtag frequency' command is executed.
+13:40:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+13:40:25 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+13:40:25 INFO  : Context for processor 'microblaze_0' is selected.
+13:40:25 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+13:40:25 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:40:25 INFO  : Context for processor 'microblaze_0' is selected.
+13:40:25 INFO  : System reset is completed.
+13:40:28 INFO  : 'after 3000' command is executed.
+13:40:28 INFO  : Context for processor 'microblaze_0' is selected.
+13:40:28 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+13:40:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+13:40:28 INFO  : Context for processor 'microblaze_0' is selected.
+13:40:28 INFO  : 'con' command is executed.
+13:40:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:40:28 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+13:41:16 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+13:41:19 INFO  : Disconnected from the channel tcfchan#20.
+13:41:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:41:21 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+13:41:21 INFO  : 'jtag frequency' command is executed.
+13:41:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+13:41:23 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+13:41:23 INFO  : Context for processor 'microblaze_0' is selected.
+13:41:23 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+13:41:23 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:41:23 INFO  : Context for processor 'microblaze_0' is selected.
+13:41:23 INFO  : System reset is completed.
+13:41:26 INFO  : 'after 3000' command is executed.
+13:41:26 INFO  : Context for processor 'microblaze_0' is selected.
+13:41:26 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+13:41:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+13:41:26 INFO  : Context for processor 'microblaze_0' is selected.
+13:41:26 INFO  : 'con' command is executed.
+13:41:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:41:26 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+13:42:32 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+13:42:37 INFO  : Disconnected from the channel tcfchan#21.
+13:42:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:42:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+13:42:47 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+13:42:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:42:50 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+13:42:50 INFO  : 'jtag frequency' command is executed.
+13:42:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+13:42:52 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+13:42:52 INFO  : Context for processor 'microblaze_0' is selected.
+13:42:52 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+13:42:52 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:42:52 INFO  : Context for processor 'microblaze_0' is selected.
+13:42:52 INFO  : System reset is completed.
+13:42:55 INFO  : 'after 3000' command is executed.
+13:42:55 INFO  : Context for processor 'microblaze_0' is selected.
+13:42:55 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+13:42:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+13:42:55 INFO  : Context for processor 'microblaze_0' is selected.
+13:42:55 INFO  : 'con' command is executed.
+13:42:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:42:55 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+13:59:07 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+13:59:18 INFO  : Disconnected from the channel tcfchan#22.
+13:59:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:59:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+13:59:28 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+13:59:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:59:30 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+13:59:30 INFO  : 'jtag frequency' command is executed.
+13:59:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+13:59:32 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+13:59:32 INFO  : Context for processor 'microblaze_0' is selected.
+13:59:32 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+13:59:32 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:59:32 INFO  : Context for processor 'microblaze_0' is selected.
+13:59:32 INFO  : System reset is completed.
+13:59:35 INFO  : 'after 3000' command is executed.
+13:59:35 INFO  : Context for processor 'microblaze_0' is selected.
+13:59:36 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+13:59:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+13:59:36 INFO  : Context for processor 'microblaze_0' is selected.
+13:59:36 INFO  : 'con' command is executed.
+13:59:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:59:36 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+14:07:58 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+14:08:04 INFO  : Disconnected from the channel tcfchan#23.
+14:08:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:08:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+14:08:14 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+14:08:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:08:22 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+14:08:22 INFO  : 'jtag frequency' command is executed.
+14:08:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+14:08:24 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+14:08:24 INFO  : Context for processor 'microblaze_0' is selected.
+14:08:24 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+14:08:24 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:08:24 INFO  : Context for processor 'microblaze_0' is selected.
+14:08:24 INFO  : System reset is completed.
+14:08:27 INFO  : 'after 3000' command is executed.
+14:08:27 INFO  : Context for processor 'microblaze_0' is selected.
+14:08:27 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+14:08:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+14:08:27 INFO  : Context for processor 'microblaze_0' is selected.
+14:08:27 INFO  : 'con' command is executed.
+14:08:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:08:27 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+14:10:41 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+14:10:53 INFO  : Disconnected from the channel tcfchan#24.
+14:10:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:11:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+14:11:03 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+14:11:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:11:06 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+14:11:06 INFO  : 'jtag frequency' command is executed.
+14:11:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+14:11:08 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+14:11:08 INFO  : Context for processor 'microblaze_0' is selected.
+14:11:08 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+14:11:08 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:11:08 INFO  : Context for processor 'microblaze_0' is selected.
+14:11:08 INFO  : System reset is completed.
+14:11:11 INFO  : 'after 3000' command is executed.
+14:11:11 INFO  : Context for processor 'microblaze_0' is selected.
+14:11:11 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+14:11:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+14:11:11 INFO  : Context for processor 'microblaze_0' is selected.
+14:11:11 INFO  : 'con' command is executed.
+14:11:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:11:11 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+14:12:29 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+14:12:44 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+14:12:50 INFO  : Disconnected from the channel tcfchan#25.
+14:12:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:12:52 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+14:12:52 INFO  : 'jtag frequency' command is executed.
+14:12:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+14:12:54 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+14:12:54 INFO  : Context for processor 'microblaze_0' is selected.
+14:12:54 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+14:12:54 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:12:54 INFO  : Context for processor 'microblaze_0' is selected.
+14:12:54 INFO  : System reset is completed.
+14:12:57 INFO  : 'after 3000' command is executed.
+14:12:57 INFO  : Context for processor 'microblaze_0' is selected.
+14:12:57 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+14:12:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+14:12:57 INFO  : Context for processor 'microblaze_0' is selected.
+14:12:57 INFO  : 'con' command is executed.
+14:12:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:12:57 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+14:15:03 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+14:15:06 INFO  : Disconnected from the channel tcfchan#26.
+14:15:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:15:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+14:15:17 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+14:15:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:15:20 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+14:15:20 INFO  : 'jtag frequency' command is executed.
+14:15:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+14:15:22 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+14:15:22 INFO  : Context for processor 'microblaze_0' is selected.
+14:15:22 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+14:15:22 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:15:22 INFO  : Context for processor 'microblaze_0' is selected.
+14:15:22 INFO  : System reset is completed.
+14:15:25 INFO  : 'after 3000' command is executed.
+14:15:25 INFO  : Context for processor 'microblaze_0' is selected.
+14:15:25 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+14:15:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+14:15:25 INFO  : Context for processor 'microblaze_0' is selected.
+14:15:25 INFO  : 'con' command is executed.
+14:15:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:15:25 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+14:16:19 INFO  : Disconnected from the channel tcfchan#27.
+14:16:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:16:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+14:16:29 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+14:16:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:16:32 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+14:16:32 INFO  : 'jtag frequency' command is executed.
+14:16:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+14:16:34 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+14:16:34 INFO  : Context for processor 'microblaze_0' is selected.
+14:16:34 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+14:16:34 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:16:34 INFO  : Context for processor 'microblaze_0' is selected.
+14:16:34 INFO  : System reset is completed.
+14:16:37 INFO  : 'after 3000' command is executed.
+14:16:37 INFO  : Context for processor 'microblaze_0' is selected.
+14:16:37 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+14:16:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+14:16:37 INFO  : Context for processor 'microblaze_0' is selected.
+14:16:37 INFO  : 'con' command is executed.
+14:16:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:16:37 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+14:17:28 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+14:17:32 INFO  : Disconnected from the channel tcfchan#28.
+14:17:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:17:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+14:17:42 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+14:17:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:17:44 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+14:17:44 INFO  : 'jtag frequency' command is executed.
+14:17:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+14:17:46 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+14:17:46 INFO  : Context for processor 'microblaze_0' is selected.
+14:17:46 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+14:17:46 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:17:46 INFO  : Context for processor 'microblaze_0' is selected.
+14:17:46 INFO  : System reset is completed.
+14:17:49 INFO  : 'after 3000' command is executed.
+14:17:49 INFO  : Context for processor 'microblaze_0' is selected.
+14:17:50 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+14:17:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+14:17:50 INFO  : Context for processor 'microblaze_0' is selected.
+14:17:50 INFO  : 'con' command is executed.
+14:17:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:17:50 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+14:20:32 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+14:20:36 INFO  : Disconnected from the channel tcfchan#29.
+14:20:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:20:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+14:20:47 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+14:20:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:20:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+14:20:58 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+14:21:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:21:00 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+14:21:00 INFO  : 'jtag frequency' command is executed.
+14:21:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+14:21:03 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+14:21:03 INFO  : Context for processor 'microblaze_0' is selected.
+14:21:03 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+14:21:03 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:21:03 INFO  : Context for processor 'microblaze_0' is selected.
+14:21:03 INFO  : System reset is completed.
+14:21:06 INFO  : 'after 3000' command is executed.
+14:21:06 INFO  : Context for processor 'microblaze_0' is selected.
+14:21:06 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+14:21:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+14:21:06 INFO  : Context for processor 'microblaze_0' is selected.
+14:21:06 INFO  : 'con' command is executed.
+14:21:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:21:06 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+14:27:09 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+14:27:18 INFO  : Disconnected from the channel tcfchan#30.
+14:27:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:27:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+14:27:29 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+14:27:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:27:31 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+14:27:31 INFO  : 'jtag frequency' command is executed.
+14:27:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+14:27:33 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+14:27:33 INFO  : Context for processor 'microblaze_0' is selected.
+14:27:33 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+14:27:33 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:27:33 INFO  : Context for processor 'microblaze_0' is selected.
+14:27:33 INFO  : System reset is completed.
+14:27:36 INFO  : 'after 3000' command is executed.
+14:27:36 INFO  : Context for processor 'microblaze_0' is selected.
+14:27:37 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+14:27:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+14:27:37 INFO  : Context for processor 'microblaze_0' is selected.
+14:27:37 INFO  : 'con' command is executed.
+14:27:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:27:37 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+14:29:49 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+14:29:58 INFO  : Disconnected from the channel tcfchan#31.
+14:29:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:30:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+14:30:08 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+14:30:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:30:10 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+14:30:10 INFO  : 'jtag frequency' command is executed.
+14:30:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+14:30:13 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+14:30:13 INFO  : Context for processor 'microblaze_0' is selected.
+14:30:13 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+14:30:13 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:30:13 INFO  : Context for processor 'microblaze_0' is selected.
+14:30:13 INFO  : System reset is completed.
+14:30:16 INFO  : 'after 3000' command is executed.
+14:30:16 INFO  : Context for processor 'microblaze_0' is selected.
+14:30:16 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+14:30:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+14:30:16 INFO  : Context for processor 'microblaze_0' is selected.
+14:30:16 INFO  : 'con' command is executed.
+14:30:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:30:16 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+14:34:56 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+14:35:01 INFO  : Disconnected from the channel tcfchan#32.
+14:35:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:35:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+14:35:11 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+14:35:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:35:14 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+14:35:14 INFO  : 'jtag frequency' command is executed.
+14:35:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+14:35:17 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+14:35:17 INFO  : Context for processor 'microblaze_0' is selected.
+14:35:17 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+14:35:17 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:35:17 INFO  : Context for processor 'microblaze_0' is selected.
+14:35:17 INFO  : System reset is completed.
+14:35:20 INFO  : 'after 3000' command is executed.
+14:35:20 INFO  : Context for processor 'microblaze_0' is selected.
+14:35:20 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+14:35:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+14:35:20 INFO  : Context for processor 'microblaze_0' is selected.
+14:35:20 INFO  : 'con' command is executed.
+14:35:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:35:20 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+14:42:45 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+14:42:54 INFO  : Disconnected from the channel tcfchan#33.
+14:42:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:43:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+14:43:04 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+14:43:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:43:08 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+14:43:08 INFO  : 'jtag frequency' command is executed.
+14:43:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+14:43:10 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+14:43:10 INFO  : Context for processor 'microblaze_0' is selected.
+14:43:10 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+14:43:10 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:43:10 INFO  : Context for processor 'microblaze_0' is selected.
+14:43:10 INFO  : System reset is completed.
+14:43:13 INFO  : 'after 3000' command is executed.
+14:43:13 INFO  : Context for processor 'microblaze_0' is selected.
+14:43:13 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+14:43:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+14:43:14 INFO  : Context for processor 'microblaze_0' is selected.
+14:43:14 INFO  : 'con' command is executed.
+14:43:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:43:14 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+14:46:05 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+14:46:10 INFO  : Disconnected from the channel tcfchan#34.
+14:46:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:46:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+14:46:20 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+14:46:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:46:25 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+14:46:25 INFO  : 'jtag frequency' command is executed.
+14:46:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+14:46:27 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+14:46:27 INFO  : Context for processor 'microblaze_0' is selected.
+14:46:27 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+14:46:27 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:46:27 INFO  : Context for processor 'microblaze_0' is selected.
+14:46:27 INFO  : System reset is completed.
+14:46:30 INFO  : 'after 3000' command is executed.
+14:46:30 INFO  : Context for processor 'microblaze_0' is selected.
+14:46:30 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+14:46:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+14:46:30 INFO  : Context for processor 'microblaze_0' is selected.
+14:46:30 INFO  : 'con' command is executed.
+14:46:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:46:30 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+14:47:58 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+14:48:03 INFO  : Disconnected from the channel tcfchan#35.
+14:48:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:48:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+14:48:13 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+14:48:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:48:17 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+14:48:17 INFO  : 'jtag frequency' command is executed.
+14:48:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+14:48:20 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+14:48:20 INFO  : Context for processor 'microblaze_0' is selected.
+14:48:20 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+14:48:20 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:48:20 INFO  : Context for processor 'microblaze_0' is selected.
+14:48:20 INFO  : System reset is completed.
+14:48:23 INFO  : 'after 3000' command is executed.
+14:48:23 INFO  : Context for processor 'microblaze_0' is selected.
+14:48:23 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+14:48:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+14:48:23 INFO  : Context for processor 'microblaze_0' is selected.
+14:48:23 INFO  : 'con' command is executed.
+14:48:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:48:23 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+14:51:33 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+14:51:38 INFO  : Disconnected from the channel tcfchan#36.
+14:51:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:51:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+14:51:48 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+14:51:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:51:51 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+14:51:51 INFO  : 'jtag frequency' command is executed.
+14:51:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+14:51:54 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+14:51:54 INFO  : Context for processor 'microblaze_0' is selected.
+14:51:54 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+14:51:54 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:51:54 INFO  : Context for processor 'microblaze_0' is selected.
+14:51:54 INFO  : System reset is completed.
+14:51:57 INFO  : 'after 3000' command is executed.
+14:51:57 INFO  : Context for processor 'microblaze_0' is selected.
+14:51:57 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+14:51:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+14:51:57 INFO  : Context for processor 'microblaze_0' is selected.
+14:51:57 INFO  : 'con' command is executed.
+14:51:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:51:57 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+14:52:39 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+14:52:41 INFO  : Disconnected from the channel tcfchan#37.
+14:52:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:52:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+14:52:52 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+14:52:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:52:55 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+14:52:55 INFO  : 'jtag frequency' command is executed.
+14:52:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+14:52:59 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+14:53:00 INFO  : Context for processor 'microblaze_0' is selected.
+14:53:00 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+14:53:00 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:53:00 INFO  : Context for processor 'microblaze_0' is selected.
+14:53:00 INFO  : System reset is completed.
+14:53:03 INFO  : 'after 3000' command is executed.
+14:53:03 INFO  : Context for processor 'microblaze_0' is selected.
+14:53:03 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+14:53:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+14:53:03 INFO  : Context for processor 'microblaze_0' is selected.
+14:53:03 INFO  : 'con' command is executed.
+14:53:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:53:03 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+14:55:36 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+14:55:42 INFO  : Disconnected from the channel tcfchan#38.
+14:55:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:55:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+14:55:52 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+14:55:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:55:56 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+14:55:56 INFO  : 'jtag frequency' command is executed.
+14:55:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+14:55:59 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+14:55:59 INFO  : Context for processor 'microblaze_0' is selected.
+14:55:59 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+14:55:59 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:55:59 INFO  : Context for processor 'microblaze_0' is selected.
+14:55:59 INFO  : System reset is completed.
+14:56:02 INFO  : 'after 3000' command is executed.
+14:56:02 INFO  : Context for processor 'microblaze_0' is selected.
+14:56:02 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+14:56:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+14:56:02 INFO  : Context for processor 'microblaze_0' is selected.
+14:56:03 INFO  : 'con' command is executed.
+14:56:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:56:03 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+14:57:57 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+14:58:14 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+14:58:18 INFO  : Disconnected from the channel tcfchan#39.
+14:58:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:58:19 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+14:58:19 INFO  : 'jtag frequency' command is executed.
+14:58:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+14:58:22 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+14:58:22 INFO  : Context for processor 'microblaze_0' is selected.
+14:58:22 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+14:58:22 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:58:22 INFO  : Context for processor 'microblaze_0' is selected.
+14:58:22 INFO  : System reset is completed.
+14:58:25 INFO  : 'after 3000' command is executed.
+14:58:25 INFO  : Context for processor 'microblaze_0' is selected.
+14:58:25 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+14:58:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+14:58:26 INFO  : Context for processor 'microblaze_0' is selected.
+14:58:26 INFO  : 'con' command is executed.
+14:58:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:58:26 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+15:00:19 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+15:00:24 INFO  : Disconnected from the channel tcfchan#40.
+15:00:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:00:26 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+15:00:26 INFO  : 'jtag frequency' command is executed.
+15:00:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+15:00:28 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+15:00:28 INFO  : Context for processor 'microblaze_0' is selected.
+15:00:28 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+15:00:28 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:00:28 INFO  : Context for processor 'microblaze_0' is selected.
+15:00:28 INFO  : System reset is completed.
+15:00:31 INFO  : 'after 3000' command is executed.
+15:00:32 INFO  : Context for processor 'microblaze_0' is selected.
+15:00:32 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+15:00:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+15:00:32 INFO  : Context for processor 'microblaze_0' is selected.
+15:00:32 INFO  : 'con' command is executed.
+15:00:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:00:32 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+15:01:39 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+15:01:43 INFO  : Disconnected from the channel tcfchan#41.
+15:01:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:01:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:01:54 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+15:01:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:01:58 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+15:01:58 INFO  : 'jtag frequency' command is executed.
+15:01:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+15:02:01 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+15:02:01 INFO  : Context for processor 'microblaze_0' is selected.
+15:02:01 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+15:02:01 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:02:01 INFO  : Context for processor 'microblaze_0' is selected.
+15:02:01 INFO  : System reset is completed.
+15:02:04 INFO  : 'after 3000' command is executed.
+15:02:04 INFO  : Context for processor 'microblaze_0' is selected.
+15:02:04 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+15:02:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+15:02:04 INFO  : Context for processor 'microblaze_0' is selected.
+15:02:04 INFO  : 'con' command is executed.
+15:02:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:02:04 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+15:14:14 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+15:14:31 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+15:14:37 INFO  : Disconnected from the channel tcfchan#42.
+15:14:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:14:39 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+15:14:39 INFO  : 'jtag frequency' command is executed.
+15:14:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+15:14:41 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+15:14:41 INFO  : Context for processor 'microblaze_0' is selected.
+15:14:41 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+15:14:41 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:14:41 INFO  : Context for processor 'microblaze_0' is selected.
+15:14:41 INFO  : System reset is completed.
+15:14:44 INFO  : 'after 3000' command is executed.
+15:14:45 INFO  : Context for processor 'microblaze_0' is selected.
+15:14:45 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+15:14:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+15:14:45 INFO  : Context for processor 'microblaze_0' is selected.
+15:14:45 INFO  : 'con' command is executed.
+15:14:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:14:45 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+15:34:36 INFO  : Disconnected from the channel tcfchan#43.
+15:34:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:34:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:34:46 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+15:44:25 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+15:44:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:44:31 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+15:44:31 INFO  : 'jtag frequency' command is executed.
+15:44:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+15:44:34 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+15:44:34 INFO  : Context for processor 'microblaze_0' is selected.
+15:44:34 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+15:44:34 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:44:34 INFO  : Context for processor 'microblaze_0' is selected.
+15:44:34 INFO  : System reset is completed.
+15:44:37 INFO  : 'after 3000' command is executed.
+15:44:37 INFO  : Context for processor 'microblaze_0' is selected.
+15:44:38 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+15:44:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+15:44:38 INFO  : Context for processor 'microblaze_0' is selected.
+15:44:38 INFO  : 'con' command is executed.
+15:44:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:44:38 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+15:49:04 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+15:49:13 INFO  : Disconnected from the channel tcfchan#44.
+15:49:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:49:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:49:23 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+15:49:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:49:27 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+15:49:27 INFO  : 'jtag frequency' command is executed.
+15:49:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+15:49:29 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+15:49:29 INFO  : Context for processor 'microblaze_0' is selected.
+15:49:29 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+15:49:29 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:49:30 INFO  : Context for processor 'microblaze_0' is selected.
+15:49:30 INFO  : System reset is completed.
+15:49:33 INFO  : 'after 3000' command is executed.
+15:49:33 INFO  : Context for processor 'microblaze_0' is selected.
+15:49:33 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+15:49:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+15:49:33 INFO  : Context for processor 'microblaze_0' is selected.
+15:49:33 INFO  : 'con' command is executed.
+15:49:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:49:33 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+15:50:09 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+15:50:16 INFO  : Disconnected from the channel tcfchan#45.
+15:50:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:50:18 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+15:50:18 INFO  : 'jtag frequency' command is executed.
+15:50:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+15:50:20 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+15:50:20 INFO  : Context for processor 'microblaze_0' is selected.
+15:50:20 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+15:50:20 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:50:20 INFO  : Context for processor 'microblaze_0' is selected.
+15:50:20 INFO  : System reset is completed.
+15:50:23 INFO  : 'after 3000' command is executed.
+15:50:24 INFO  : Context for processor 'microblaze_0' is selected.
+15:50:24 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+15:50:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+15:50:24 INFO  : Context for processor 'microblaze_0' is selected.
+15:50:24 INFO  : 'con' command is executed.
+15:50:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:50:24 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+15:54:26 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+15:54:33 INFO  : Disconnected from the channel tcfchan#46.
+15:54:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:54:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:54:43 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+15:54:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:54:46 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+15:54:46 INFO  : 'jtag frequency' command is executed.
+15:54:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+15:54:49 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+15:54:49 INFO  : Context for processor 'microblaze_0' is selected.
+15:54:49 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+15:54:49 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:54:49 INFO  : Context for processor 'microblaze_0' is selected.
+15:54:49 INFO  : System reset is completed.
+15:54:52 INFO  : 'after 3000' command is executed.
+15:54:52 INFO  : Context for processor 'microblaze_0' is selected.
+15:54:53 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+15:54:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+15:54:53 INFO  : Context for processor 'microblaze_0' is selected.
+15:54:53 INFO  : 'con' command is executed.
+15:54:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:54:53 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+15:56:59 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+15:57:13 INFO  : Disconnected from the channel tcfchan#47.
+15:57:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:57:14 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+15:57:14 INFO  : 'jtag frequency' command is executed.
+15:57:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+15:57:17 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+15:57:17 INFO  : Context for processor 'microblaze_0' is selected.
+15:57:17 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+15:57:17 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:57:17 INFO  : Context for processor 'microblaze_0' is selected.
+15:57:17 INFO  : System reset is completed.
+15:57:20 INFO  : 'after 3000' command is executed.
+15:57:20 INFO  : Context for processor 'microblaze_0' is selected.
+15:57:21 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+15:57:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+15:57:21 INFO  : Context for processor 'microblaze_0' is selected.
+15:57:21 INFO  : 'con' command is executed.
+15:57:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:57:21 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+15:57:36 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+15:57:41 INFO  : Disconnected from the channel tcfchan#48.
+15:57:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:57:43 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+15:57:43 INFO  : 'jtag frequency' command is executed.
+15:57:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+15:57:45 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+15:57:46 INFO  : Context for processor 'microblaze_0' is selected.
+15:57:46 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+15:57:46 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:57:46 INFO  : Context for processor 'microblaze_0' is selected.
+15:57:46 INFO  : System reset is completed.
+15:57:49 INFO  : 'after 3000' command is executed.
+15:57:49 INFO  : Context for processor 'microblaze_0' is selected.
+15:57:49 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+15:57:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+15:57:50 INFO  : Context for processor 'microblaze_0' is selected.
+15:57:50 INFO  : 'con' command is executed.
+15:57:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:57:50 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'
+15:57:54 INFO  : Checking for BSP changes to sync application flags for project 'Hello_World'...
+15:58:03 INFO  : Disconnected from the channel tcfchan#49.
+15:58:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:58:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:58:14 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+15:58:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:58:17 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B62091A' is selected.
+15:58:17 INFO  : 'jtag frequency' command is executed.
+15:58:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}' command is executed.
+15:58:19 INFO  : Device configured successfully with "C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit"
+15:58:19 INFO  : Context for processor 'microblaze_0' is selected.
+15:58:19 INFO  : Hardware design and registers information is loaded from 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa'.
+15:58:19 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:58:20 INFO  : Context for processor 'microblaze_0' is selected.
+15:58:20 INFO  : System reset is completed.
+15:58:23 INFO  : 'after 3000' command is executed.
+15:58:23 INFO  : Context for processor 'microblaze_0' is selected.
+15:58:23 INFO  : The application 'C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf' is downloaded to processor 'microblaze_0'.
+15:58:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B62091A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B62091A-13631093-0"}
+fpga -file C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/hw/system_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/Hello_World/Debug/Hello_World.elf
+----------------End of Script----------------
+
+15:58:23 INFO  : Context for processor 'microblaze_0' is selected.
+15:58:23 INFO  : 'con' command is executed.
+15:58:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:58:23 INFO  : Launch script is exported to file 'C:\Users\ryand\OneDrive\Documents\Xilinx\ECE153A\Vitis\ECE153a_Lab1\Hello_World_system\_ide\scripts\debugger_hello_world-default_52.tcl'

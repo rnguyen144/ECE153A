@@ -1,15 +1,9 @@
-15:57:54 **** Incremental Build of configuration Debug for project Hello_World ****
+16:07:14 **** Incremental Build of configuration Debug for project Hello_World ****
 make all 
 'Building file: ../src/timing.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timing.o" -IC:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153a_Lab1/export/ECE153a_Lab1/sw/ECE153a_Lab1/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timing.d" -MT"src/timing.o" -o "src/timing.o" "../src/timing.c"
 ../src/timing.c: In function 'main':
-../src/timing.c:265:42: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
-  265 |                                 printf("%d\n\r",cycle_count);
-      |                                         ~^      ~~~~~~~~~~~
-      |                                          |      |
-      |                                          int    u32 {aka long unsigned int}
-      |                                         %ld
 ../src/timing.c:190:31: warning: unused variable 'Data' [-Wunused-variable]
   190 |         volatile unsigned int Data;
       |                               ^~~~
@@ -32,9 +26,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/ryand/OneDrive/Documents/Xilinx/E
 'Invoking: MicroBlaze Print Size'
 mb-size Hello_World.elf  |tee "Hello_World.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  73684	   1812	   8568	  84064	  14860	Hello_World.elf
+  15016	    408	   8496	  23920	   5d70	Hello_World.elf
 'Finished building: Hello_World.elf.size'
 ' '
 
-15:57:57 Build Finished (took 2s.383ms)
+16:07:16 Build Finished (took 2s.502ms)
 

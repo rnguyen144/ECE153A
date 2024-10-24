@@ -225,10 +225,10 @@ int main() {
 			div1000 = count/1000;
 			div10000 = count/10000;
 			div100000 = count/100000;
-			div1000000 = count/100000;
-			div10000000 = count/1000000;
-			div100000000 = count/100000000;
-			div1000000000 = count/1000000000;
+			div1000000 = count/1000000;
+			div10000000 = count/10000000;
+			div100000000 = count/1000000000;
+			div1000000000 = count/10000000000;
 
 
 			// div1000 = (div100*6554) >> 16;
@@ -260,12 +260,12 @@ int main() {
 		//delay(1000);
 		// printf("%d\n\r",div10-10*(div100-(div1000-10*(div10000-10*(div100000-10*div1000000)))));
 			
-			cycle_count++;
-			if(count >= 100000){
-				printf("%d\n\r",cycle_count);
-				cycle_count = 0;
-				count=0;
-			}
+			// cycle_count++;
+			// if(count >= 100000){
+			// 	printf("%d\n\r",cycle_count);
+			// 	cycle_count = 0;
+			// 	count=0;
+			// }
 
 
 	}

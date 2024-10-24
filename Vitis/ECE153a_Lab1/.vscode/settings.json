@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "stdlib.h": "c",
-        "extra.h": "c"
+        "extra.h": "c",
+        "xil_printf.h": "c",
+        "sevenseg_new.h": "c"
     }
 }

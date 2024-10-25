@@ -1,0 +1,255 @@
+/*
+ *timing.c: simple starter application for lab 1A and 1B
+ *
+ */
+#define RESET_VALUE 1000000 // 100ms
+#define LOOP_DELAY 1000
+#include <stdio.h>		// Used for printf()
+#include <stdlib.h>		// Used for rand()
+#include "xparameters.h"	// Contains hardware addresses and bit masks
+#include "xil_cache.h"		// Cache Drivers
+#include "xintc.h"		// Interrupt Drivers
+#include "xtmrctr.h"		// Timer Drivers
+#include "xtmrctr_l.h" 		// Low-level timer drivers
+#include "xil_printf.h" 	// Used for xil_printf()
+							// Provides a source of bus contention
+#include "xgpio.h" 		// LED driver, used for General purpose I/i
+
+
+
+
+
+XGpio Led;
+XGpio RGBLed;
+XGpio BtnGpio;
+XGpio EncoderGpio;
+
+XIntc InterruptController;
+XTmrCtr tmrctr;
+
+int state = 0;
+int ledOn = 1;
+u16 ledPosition = (1 << 15);
+int btnWait = 0;
+
+
+
+
+//BaseAddr points to the base (byte) address of the DDR2 Memory
+u8 * BaseAddr = (u8 *) XPAR_MIG7SERIES_0_BASEADDR;
+
+void GpioInterruptHandler(void *CallbackRef) {
+    
+    // Read the GPIO status
+     int encoderVal = XGpio_DiscreteRead(&EncoderGpio, 1);
+    
+    // Clear the interrupt status by reading the interrupt status register
+    XGpio_InterruptClear(&EncoderGpio, 1);
+
+	if((encoderVal & 4) && !btnWait){
+		XTmrCtr_Start(&tmrctr, 0);
+		btnWait = 1;
+		ledOn = !ledOn;
+	}
+
+	switch (state)
+	{
+	case 0: //Resting State
+		if(encoderVal == 1){
+			state = 1;
+		}
+		else if(encoderVal == 2){
+			state = 4;
+		}
+		break;
+
+	case 1: //1/4 CW
+		if(encoderVal == 0){
+			state = 2;
+		}
+		else if(encoderVal == 3){
+			state = 0;
+		}
+		break;
+
+	case 2: //2/4 CW
+		if(encoderVal == 2){
+			state = 3;
+		}
+		else if(encoderVal == 1){
+			state = 1;
+		}
+		break;
+	
+	case 3: //3/4 CW
+		if(encoderVal == 3){
+			state = 0;
+			ledPosition = (ledPosition >> 1) | ((ledPosition & 1) << 15);
+			// print("Turned Right");
+		}
+		else if(encoderVal == 0){
+			state = 2;
+		}
+		break;
+
+	case 4: //1/4 CCW
+		if(encoderVal == 0){
+			state = 5;
+		}
+		else if(encoderVal == 3){
+			state = 0;
+		}
+		break;
+
+	case 5: //2/4 CCW
+		if(encoderVal == 1){
+			state = 6;
+		}
+		else if(encoderVal == 2){
+			state = 4;
+		}
+		break;
+	
+	case 6: //3/4 CCW
+		if(encoderVal == 3){
+			state = 0;
+			ledPosition = (ledPosition << 1) | (ledPosition >> 15);
+			// print("Turned Left");
+		}
+		else if(encoderVal == 0){
+			state = 5;
+		}
+		break;
+	
+	default:
+		if(encoderVal == 3){
+			state = 0;
+		}
+		break;
+	}
+	// xil_printf("State: %d\n\r", state);
+
+	
+
+}
+
+void TmrHandler(void *Callback){
+    // Stop the timer since it should only fire once
+    XTmrCtr_Stop(&tmrctr, 0);
+
+    // Clear the interrupt flag
+    XTmrCtr_SetControlStatusReg(tmrctr.BaseAddress, 0, XTC_CSR_INT_OCCURED_MASK);
+
+    // Reset the button wait flag
+    btnWait = 0;
+
+    // Print a message indicating the timer has fired
+    xil_printf("Timer interrupt occurred!\n");
+}
+
+// Setup Interrupt System
+int SetupInterruptSystem(XIntc *IntcInstancePtr) {
+    int Status;
+
+    // Initialize the interrupt controller driver
+    Status = XIntc_Initialize(IntcInstancePtr, XPAR_INTC_0_DEVICE_ID);
+    if (Status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    // Connect the GPIO interrupt handler to the interrupt system
+    Status = XIntc_Connect(IntcInstancePtr, XPAR_INTC_0_GPIO_0_VEC_ID,
+                           (XInterruptHandler)GpioInterruptHandler,
+                           &EncoderGpio);
+    if (Status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+	Status = XIntc_Connect(IntcInstancePtr, XPAR_MICROBLAZE_0_AXI_INTC_AXI_TIMER_0_INTERRUPT_INTR,
+			(XInterruptHandler) TmrHandler, &tmrctr);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Failed to connect the application  timer handlers to the interrupt controller...\r\n");
+		return XST_FAILURE;
+	}
+
+
+
+    // Start the interrupt controller in real mode
+    Status = XIntc_Start(IntcInstancePtr, XIN_REAL_MODE);
+    if (Status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    // Enable the interrupt for the GPIO device
+    XGpio_InterruptEnable(&EncoderGpio, 1);
+    XGpio_InterruptGlobalEnable(&EncoderGpio);
+
+	// Enable the interupt for the TmrCtr
+	Status = XTmrCtr_Initialize(&tmrctr, XPAR_AXI_TIMER_0_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Timer initialization failed...\r\n");
+		return XST_FAILURE;
+	}
+
+	XTmrCtr_SetOptions(&tmrctr, 0, XTC_INT_MODE_OPTION | XTC_AUTO_RELOAD_OPTION);
+	XTmrCtr_SetResetValue(&tmrctr, 0, 0xFFFFFFFF - RESET_VALUE);// 1000 clk cycles @ 100MHz = 10us
+	
+
+    // Enable the interrupt in the interrupt controller
+    XIntc_Enable(IntcInstancePtr, XPAR_INTC_0_GPIO_0_VEC_ID);
+	XIntc_Enable(IntcInstancePtr, XPAR_MICROBLAZE_0_AXI_INTC_AXI_TIMER_0_INTERRUPT_INTR);
+
+    // Enable interrupts in the processor
+    Xil_ExceptionInit();
+    Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+                                 (Xil_ExceptionHandler)XIntc_InterruptHandler,
+                                 IntcInstancePtr);
+    Xil_ExceptionEnable();
+
+    return XST_SUCCESS;
+}
+
+void delay(int n){
+	int i;
+	for(i=0;i<n;i++){}
+}
+
+int main() {
+	int Status;
+    // Caches enabled here -- Diasble if you want alternate measurements
+	Xil_ICacheInvalidate();
+	Xil_ICacheEnable();
+	Xil_DCacheInvalidate();
+	Xil_DCacheEnable();
+	print("---Entering main---\n\r");
+
+	XGpio_Initialize(&Led, XPAR_AXI_GPIO_LED_DEVICE_ID);
+	XGpio_Initialize(&EncoderGpio, XPAR_AXI_GPIO_ENCODER_DEVICE_ID);
+	Status = SetupInterruptSystem(&InterruptController);
+    if (Status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+
+	while(1){
+		XGpio_DiscreteWrite(&Led, 1, ledPosition * ledOn);
+	}
+
+
+
+
+	// Extra Method contains an interrupt routine which is set to go off at timed intervals
+	//extra_method();
+
+	//TIMER RESET CODE
+	//Turn off the timer
+	XTmrCtr_SetControlStatusReg(XPAR_TMRCTR_0_BASEADDR, 1, 0);
+	//Put a zero in the load register
+	XTmrCtr_SetLoadReg(XPAR_TMRCTR_0_BASEADDR, 1, 0);
+	//Copy the load register into the counter register
+	XTmrCtr_SetControlStatusReg(XPAR_TMRCTR_0_BASEADDR, 1, XTC_CSR_LOAD_MASK);
+	//Enable (start) the timer
+	XTmrCtr_SetControlStatusReg(XPAR_TMRCTR_0_BASEADDR, 1,
+			XTC_CSR_ENABLE_TMR_MASK);
+	//END TIMER RESET CODE
+}

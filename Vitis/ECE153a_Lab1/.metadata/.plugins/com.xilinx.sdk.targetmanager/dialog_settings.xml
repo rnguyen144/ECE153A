@@ -6,7 +6,14 @@
 	<item key="Hello_World_system-device" value="Auto Detect"/>
 	<item key="Hello_World_system-partial_bit" value="false"/>
 	<item key="Hello_World_system-skip_rev_check" value="false"/>
-	<item key="programfpga.sdxproject" value="Hello_World_system"/>
+	<item key="programfpga.sdxproject" value="Lab2_system"/>
 	<item key="Hello_World_system-microblaze_0-initElf" value="bootloop"/>
 	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Nexys A7 -100T 210292BD0126A&quot;,&quot;indexContextMap&quot;:{&quot;4&quot;:&quot;jsn-Nexys A7 -100T-210292BD0126A-13631093-0&quot;}},{&quot;name&quot;:&quot;Digilent Nexys A7 -100T 210292B62091A&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Nexys A7 -100T-210292B62091A-13631093-0&quot;}}]}"/>
+	<item key="Lab2_system-bitFile" value="${project_loc:Lab2}/_ide/bitstream/system_wrapper.bit"/>
+	<item key="Lab2_system-bmmFile" value="${project_loc:Lab2}/_ide/bitstream/system_wrapper.mmi"/>
+	<item key="Lab2_system-target" value="Local"/>
+	<item key="Lab2_system-device" value="Auto Detect"/>
+	<item key="Lab2_system-partial_bit" value="false"/>
+	<item key="Lab2_system-skip_rev_check" value="false"/>
+	<item key="Lab2_system-microblaze_0-initElf" value="bootloop"/>
 </section>

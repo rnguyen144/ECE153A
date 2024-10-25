@@ -1,25 +1,28 @@
 Nothing to build in platform 'ECE153A_Lab2'
 
-18:00:58 **** Incremental Build of configuration Debug for project Lab2 ****
+16:49:45 **** Incremental Build of configuration Debug for project Lab2 ****
 make all 
-'Building file: ../src/helloworld.c'
+'Building file: ../src/main.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153A_Lab2/export/ECE153A_Lab2/sw/ECE153A_Lab2/standalone_microblaze_0/bspinclude/include -mlittle-endian -mxl-barrel-shift -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
-' '
-'Building file: ../src/platform.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153A_Lab2/export/ECE153A_Lab2/sw/ECE153A_Lab2/standalone_microblaze_0/bspinclude/include -mlittle-endian -mxl-barrel-shift -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -IC:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153A_Lab2/export/ECE153A_Lab2/sw/ECE153A_Lab2/standalone_microblaze_0/bspinclude/include -mlittle-endian -mxl-barrel-shift -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'TmrHandler':
+../src/main.c:146:13: warning: unused variable 'ControlStatusReg' [-Wunused-variable]
+  146 |         u32 ControlStatusReg;
+      |             ^~~~~~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:250:14: warning: unused variable 'loop2' [-Wunused-variable]
+  250 |         long loop2 = loops*pwm/100;
+      |              ^~~~~
+'Finished building: ../src/main.c'
 ' '
 'Building target: Lab2.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153A_Lab2/export/ECE153A_Lab2/sw/ECE153A_Lab2/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Lab2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vitis/ECE153a_Lab1/ECE153A_Lab2/export/ECE153A_Lab2/sw/ECE153A_Lab2/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Lab2.elf"  ./src/extra.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 'Finished building target: Lab2.elf'
 ' '
 'Invoking: MicroBlaze Print Size'
 mb-size Lab2.elf  |tee "Lab2.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   2836	    348	   3112	   6296	   1898	Lab2.elf
+  13092	    452	   8496	  22040	   5618	Lab2.elf
 'Finished building: Lab2.elf.size'
 ' '

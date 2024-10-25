@@ -1,52 +1,69 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <wave_config>
-	<wave_state>
-	</wave_state>
-	<db_ref_list>
-		<db_ref path="C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_153A_Lab2/ECE_153A_Lab2.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1" type="auto">
-			<top_modules>
-				<top_module name="top">
-				</top_module>
-			</top_modules>
-		</db_ref>
-	</db_ref_list>
-	<WVObjectSize size="6">
-	</WVObjectSize>
-	<wvobject fp_name="u_ila_0_ILMB_abus" type="array" db_ref_id="1">
-		<obj_property name="ElementShortName">u_ila_0_ILMB_abus[30:31]</obj_property>
-		<obj_property name="ObjectShortName">u_ila_0_ILMB_abus[30:31]</obj_property>
-		<obj_property name="DisplayName">FullPathName</obj_property>
-		<obj_property name="Radix">HEXRADIX</obj_property>
-	</wvobject>
-	<wvobject fp_name="system_i/microblaze_0_local_memory/ILMB_abus" type="array" db_ref_id="1">
-		<obj_property name="ElementShortName">system_i/microblaze_0_local_memory/ILMB_abus[15:29]</obj_property>
-		<obj_property name="ObjectShortName">ILMB_abus[15:29]</obj_property>
-		<obj_property name="DisplayName">FullPathName</obj_property>
-		<obj_property name="Radix">HEXRADIX</obj_property>
-	</wvobject>
-	<wvobject fp_name="u_ila_0_ILMB_abus" type="array" db_ref_id="1">
-		<obj_property name="ElementShortName">u_ila_0_ILMB_abus[0:14]</obj_property>
-		<obj_property name="ObjectShortName">u_ila_0_ILMB_abus[0:14]</obj_property>
-		<obj_property name="DisplayName">FullPathName</obj_property>
-		<obj_property name="Radix">HEXRADIX</obj_property>
-	</wvobject>
-	<wvobject fp_name="JD_IBUF" type="array" db_ref_id="1">
-		<obj_property name="ElementShortName">JD_IBUF[2:0]</obj_property>
-		<obj_property name="ObjectShortName">JD_IBUF[2:0]</obj_property>
-		<obj_property name="DisplayName">FullPathName</obj_property>
-		<obj_property name="Radix">HEXRADIX</obj_property>
-	</wvobject>
-	<wvobject fp_name="system_i/axi_gpio_0_ip2intc_irpt" type="logic" db_ref_id="1">
-		<obj_property name="ElementShortName">system_i/axi_gpio_0_ip2intc_irpt</obj_property>
-		<obj_property name="ObjectShortName">axi_gpio_0_ip2intc_irpt</obj_property>
-		<obj_property name="DisplayName">FullPathName</obj_property>
-		<obj_property name="Radix">HEXRADIX</obj_property>
-	</wvobject>
-	<wvobject fp_name="system_i/microblaze_0_interrupt_INTERRUPT" type="logic" db_ref_id="1">
-		<obj_property name="ElementShortName">system_i/microblaze_0_interrupt_INTERRUPT</obj_property>
-		<obj_property name="ObjectShortName">microblaze_0_interrupt_INTERRUPT</obj_property>
-		<obj_property name="DisplayName">FullPathName</obj_property>
-		<obj_property name="Radix">HEXRADIX</obj_property>
-	</wvobject>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_153A_Lab2/ECE_153A_Lab2.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0"></ZoomStartTime>
+      <ZoomEndTime time="9"></ZoomEndTime>
+      <Cursor1Time time="0"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="u_ila_0_ILMB_abus" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_ILMB_abus[30:31]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_ILMB_abus[30:31]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/microblaze_0_local_memory/ILMB_abus" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/microblaze_0_local_memory/ILMB_abus[15:29]</obj_property>
+      <obj_property name="ObjectShortName">ILMB_abus[15:29]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_ILMB_abus" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_ILMB_abus[30:31]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_ILMB_abus[30:31]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="JD_IBUF" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">JD_IBUF[2:0]</obj_property>
+      <obj_property name="ObjectShortName">JD_IBUF[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/axi_gpio_0_ip2intc_irpt" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/axi_gpio_0_ip2intc_irpt</obj_property>
+      <obj_property name="ObjectShortName">axi_gpio_0_ip2intc_irpt</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/microblaze_0_interrupt_INTERRUPT" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/microblaze_0_interrupt_INTERRUPT</obj_property>
+      <obj_property name="ObjectShortName">microblaze_0_interrupt_INTERRUPT</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
 </wave_config>
-

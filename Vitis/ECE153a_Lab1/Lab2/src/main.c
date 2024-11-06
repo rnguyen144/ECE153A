@@ -150,7 +150,7 @@ void TmrHandler(void *Callback){
 
     // Clear the interrupt flag
     // XTmrCtr_SetControlStatusReg(tmrctr.BaseAddress, 0, XTC_CSR_INT_OCCURED_MASK);
-	XTmrCtr_Stop(&tmrctr, 0);
+	// XTmrCtr_Stop(&tmrctr, 0); //redundatn line
 
     // Reset the button wait flag
     btnWait = 0;

@@ -1,4 +1,4 @@
-16:49:45 **** Incremental Build of configuration Debug for project Lab2 ****
+16:27:24 **** Incremental Build of configuration Debug for project Lab2 ****
 make all 
 'Building file: ../src/main.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -21,9 +21,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/ryand/OneDrive/Documents/Xilinx/E
 'Invoking: MicroBlaze Print Size'
 mb-size Lab2.elf  |tee "Lab2.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  13092	    452	   8496	  22040	   5618	Lab2.elf
+  13068	    452	   8496	  22016	   5600	Lab2.elf
 'Finished building: Lab2.elf.size'
 ' '
 
-16:49:46 Build Finished (took 1s.110ms)
+16:27:28 Build Finished (took 3s.792ms)
 

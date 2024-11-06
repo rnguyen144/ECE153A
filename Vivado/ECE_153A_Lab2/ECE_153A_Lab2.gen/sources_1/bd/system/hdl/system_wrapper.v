@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-//Date        : Wed Oct 23 14:56:49 2024
+//Date        : Tue Nov  5 09:11:26 2024
 //Host        : Ella running 64-bit major release  (build 9200)
 //Command     : generate_target system_wrapper.bd
 //Design      : system_wrapper
@@ -29,9 +29,14 @@ module system_wrapper
     btn,
     btnCpuReset,
     clock_rtl,
+    io0_o,
     led,
+    reset_spi,
     rgbleds,
-    seg);
+    sck_o,
+    seg,
+    spi_dc,
+    ss_o);
   output [12:0]DDR2_addr;
   output [2:0]DDR2_ba;
   output DDR2_cas_n;
@@ -51,9 +56,14 @@ module system_wrapper
   input [4:0]btn;
   input btnCpuReset;
   input clock_rtl;
+  output io0_o;
   output [15:0]led;
+  output reset_spi;
   output [5:0]rgbleds;
+  output sck_o;
   output [6:0]seg;
+  output [0:0]spi_dc;
+  output [0:0]ss_o;
 
   wire [12:0]DDR2_addr;
   wire [2:0]DDR2_ba;
@@ -74,9 +84,14 @@ module system_wrapper
   wire [4:0]btn;
   wire btnCpuReset;
   wire clock_rtl;
+  wire io0_o;
   wire [15:0]led;
+  wire reset_spi;
   wire [5:0]rgbleds;
+  wire sck_o;
   wire [6:0]seg;
+  wire [0:0]spi_dc;
+  wire [0:0]ss_o;
 
   system system_i
        (.DDR2_addr(DDR2_addr),
@@ -98,7 +113,12 @@ module system_wrapper
         .btn(btn),
         .btnCpuReset(btnCpuReset),
         .clock_rtl(clock_rtl),
+        .io0_o(io0_o),
         .led(led),
+        .reset_spi(reset_spi),
         .rgbleds(rgbleds),
-        .seg(seg));
+        .sck_o(sck_o),
+        .seg(seg),
+        .spi_dc(spi_dc),
+        .ss_o(ss_o));
 endmodule

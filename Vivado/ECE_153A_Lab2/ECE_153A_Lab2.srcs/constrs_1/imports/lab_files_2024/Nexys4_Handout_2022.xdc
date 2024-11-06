@@ -120,11 +120,11 @@ set_property -dict {PACKAGE_PIN N17 IOSTANDARD LVCMOS33} [get_ports {btn[4]}]
 
 ##Pmod Header JC
 
-#set_property -dict { PACKAGE_PIN K1    IOSTANDARD LVCMOS33 } [get_ports { JC[1] }]; #IO_L23N_T3_35 Sch=jc[1]
-#set_property -dict { PACKAGE_PIN F6    IOSTANDARD LVCMOS33 } [get_ports { JC[2] }]; #IO_L19N_T3_VREF_35 Sch=jc[2]
-#set_property -dict { PACKAGE_PIN J2    IOSTANDARD LVCMOS33 } [get_ports { JC[3] }]; #IO_L22N_T3_35 Sch=jc[3]
-#set_property -dict { PACKAGE_PIN G6    IOSTANDARD LVCMOS33 } [get_ports { JC[4] }]; #IO_L19P_T3_35 Sch=jc[4]
-#set_property -dict { PACKAGE_PIN E7    IOSTANDARD LVCMOS33 } [get_ports { JC[7] }]; #IO_L6P_T0_35 Sch=jc[7]
+set_property -dict { PACKAGE_PIN K1    IOSTANDARD LVCMOS33 } [get_ports { ss_o }];#JC[1] }]; #IO_L23N_T3_35 Sch=jc[1]
+set_property -dict { PACKAGE_PIN F6    IOSTANDARD LVCMOS33 } [get_ports { io0_0 }];#JC[2] }]; #IO_L19N_T3_VREF_35 Sch=jc[2]
+set_property -dict { PACKAGE_PIN J2    IOSTANDARD LVCMOS33 } [get_ports { spi_dc }];#JC[3] }]; #IO_L22N_T3_35 Sch=jc[3]
+set_property -dict { PACKAGE_PIN G6    IOSTANDARD LVCMOS33 } [get_ports { sck_o }];#JC[4] }]; #IO_L19P_T3_35 Sch=jc[4]
+set_property -dict { PACKAGE_PIN E7    IOSTANDARD LVCMOS33 } [get_ports { reset_spi }];#JC[7] }]; #IO_L6P_T0_35 Sch=jc[7]
 #set_property -dict { PACKAGE_PIN J3    IOSTANDARD LVCMOS33 } [get_ports { JC[8] }]; #IO_L22P_T3_35 Sch=jc[8]
 #set_property -dict { PACKAGE_PIN J4    IOSTANDARD LVCMOS33 } [get_ports { JC[9] }]; #IO_L21P_T3_DQS_35 Sch=jc[9]
 #set_property -dict { PACKAGE_PIN E6    IOSTANDARD LVCMOS33 } [get_ports { JC[10] }]; #IO_L5P_T0_AD13P_35 Sch=jc[10]
@@ -267,11 +267,13 @@ set_property -dict {PACKAGE_PIN G1 IOSTANDARD LVCMOS33} [get_ports {JD[2]}]
 
 
 
+connect_debug_port u_ila_0/probe1 [get_nets [list {JD_IBUF[0]} {JD_IBUF[1]} {JD_IBUF[2]}]]
+
 create_debug_core u_ila_0 ila
 set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
 set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
 set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
-set_property C_DATA_DEPTH 4096 [get_debug_cores u_ila_0]
+set_property C_DATA_DEPTH 32768 [get_debug_cores u_ila_0]
 set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
 set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
 set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
@@ -283,16 +285,12 @@ set_property port_width 32 [get_debug_ports u_ila_0/probe0]
 connect_debug_port u_ila_0/probe0 [get_nets [list {system_i/microblaze_0_local_memory/ILMB_abus[31]} {system_i/microblaze_0_local_memory/ILMB_abus[30]} {system_i/microblaze_0_local_memory/ILMB_abus[29]} {system_i/microblaze_0_local_memory/ILMB_abus[28]} {system_i/microblaze_0_local_memory/ILMB_abus[27]} {system_i/microblaze_0_local_memory/ILMB_abus[26]} {system_i/microblaze_0_local_memory/ILMB_abus[25]} {system_i/microblaze_0_local_memory/ILMB_abus[24]} {system_i/microblaze_0_local_memory/ILMB_abus[23]} {system_i/microblaze_0_local_memory/ILMB_abus[22]} {system_i/microblaze_0_local_memory/ILMB_abus[21]} {system_i/microblaze_0_local_memory/ILMB_abus[20]} {system_i/microblaze_0_local_memory/ILMB_abus[19]} {system_i/microblaze_0_local_memory/ILMB_abus[18]} {system_i/microblaze_0_local_memory/ILMB_abus[17]} {system_i/microblaze_0_local_memory/ILMB_abus[16]} {system_i/microblaze_0_local_memory/ILMB_abus[15]} {system_i/microblaze_0_local_memory/ILMB_abus[14]} {system_i/microblaze_0_local_memory/ILMB_abus[13]} {system_i/microblaze_0_local_memory/ILMB_abus[12]} {system_i/microblaze_0_local_memory/ILMB_abus[11]} {system_i/microblaze_0_local_memory/ILMB_abus[10]} {system_i/microblaze_0_local_memory/ILMB_abus[9]} {system_i/microblaze_0_local_memory/ILMB_abus[8]} {system_i/microblaze_0_local_memory/ILMB_abus[7]} {system_i/microblaze_0_local_memory/ILMB_abus[6]} {system_i/microblaze_0_local_memory/ILMB_abus[5]} {system_i/microblaze_0_local_memory/ILMB_abus[4]} {system_i/microblaze_0_local_memory/ILMB_abus[3]} {system_i/microblaze_0_local_memory/ILMB_abus[2]} {system_i/microblaze_0_local_memory/ILMB_abus[1]} {system_i/microblaze_0_local_memory/ILMB_abus[0]}]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
-set_property port_width 3 [get_debug_ports u_ila_0/probe1]
-connect_debug_port u_ila_0/probe1 [get_nets [list {JD_IBUF[0]} {JD_IBUF[1]} {JD_IBUF[2]}]]
+set_property port_width 1 [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list system_i/axi_gpio_0_ip2intc_irpt]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
 set_property port_width 1 [get_debug_ports u_ila_0/probe2]
-connect_debug_port u_ila_0/probe2 [get_nets [list system_i/axi_gpio_0_ip2intc_irpt]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
-set_property port_width 1 [get_debug_ports u_ila_0/probe3]
-connect_debug_port u_ila_0/probe3 [get_nets [list system_i/microblaze_0_interrupt_INTERRUPT]]
+connect_debug_port u_ila_0/probe2 [get_nets [list system_i/microblaze_0_interrupt_INTERRUPT]]
 set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
 set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
 set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]

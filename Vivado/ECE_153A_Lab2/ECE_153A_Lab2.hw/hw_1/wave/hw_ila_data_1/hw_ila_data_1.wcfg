@@ -9,15 +9,17 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0"></ZoomStartTime>
-      <ZoomEndTime time="9"></ZoomEndTime>
-      <Cursor1Time time="0"></Cursor1Time>
+      <ZoomStartTime time="1,008"></ZoomStartTime>
+      <ZoomEndTime time="1,017"></ZoomEndTime>
+      <Cursor1Time time="1,011"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="276"></NameColumnWidth>
-      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+      <ValueColumnWidth column_width="116"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="6" />
+   <WVObjectSize size="5" />
+   <wave_markers>
+   </wave_markers>
    <wvobject fp_name="u_ila_0_ILMB_abus" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">u_ila_0_ILMB_abus[30:31]</obj_property>
@@ -34,14 +36,6 @@
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="u_ila_0_ILMB_abus" type="array">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">u_ila_0_ILMB_abus[30:31]</obj_property>
-      <obj_property name="ObjectShortName">u_ila_0_ILMB_abus[30:31]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
    <wvobject fp_name="JD_IBUF" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">JD_IBUF[2:0]</obj_property>
@@ -49,6 +43,7 @@
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject fp_name="system_i/axi_gpio_0_ip2intc_irpt" type="logic">
       <obj_property name="DisplayName">FullPathName</obj_property>

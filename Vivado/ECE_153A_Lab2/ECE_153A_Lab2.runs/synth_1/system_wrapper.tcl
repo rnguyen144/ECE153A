@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 4
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -88,7 +89,7 @@ set_property ip_output_repo c:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Viv
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib c:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_153A_Lab2/ECE_153A_Lab2.gen/sources_1/bd/system/hdl/system_wrapper.v
+read_verilog -library xil_defaultlib C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_153A_Lab2/ECE_153A_Lab2.srcs/sources_1/imports/system_wrapper.v
 add_files C:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_153A_Lab2/ECE_153A_Lab2.srcs/sources_1/bd/system/system.bd
 set_property used_in_implementation false [get_files -all c:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_153A_Lab2/ECE_153A_Lab2.gen/sources_1/bd/system/ip/system_mig_7series_0_0/system_mig_7series_0_0/user_design/constraints/system_mig_7series_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_153A_Lab2/ECE_153A_Lab2.gen/sources_1/bd/system/ip/system_mig_7series_0_0/system_mig_7series_0_0/user_design/constraints/system_mig_7series_0_0_ooc.xdc]
@@ -149,6 +150,16 @@ set_property used_in_implementation false [get_files -all c:/Users/ryand/OneDriv
 set_property used_in_implementation false [get_files -all c:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_153A_Lab2/ECE_153A_Lab2.gen/sources_1/bd/system/ip/system_axi_gpio_0_3/system_axi_gpio_0_3_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_153A_Lab2/ECE_153A_Lab2.gen/sources_1/bd/system/ip/system_axi_gpio_0_3/system_axi_gpio_0_3_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_153A_Lab2/ECE_153A_Lab2.gen/sources_1/bd/system/ip/system_axi_gpio_0_3/system_axi_gpio_0_3.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_153A_Lab2/ECE_153A_Lab2.gen/sources_1/bd/system/ip/system_axi_gpio_0_4/system_axi_gpio_0_4_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_153A_Lab2/ECE_153A_Lab2.gen/sources_1/bd/system/ip/system_axi_gpio_0_4/system_axi_gpio_0_4_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_153A_Lab2/ECE_153A_Lab2.gen/sources_1/bd/system/ip/system_axi_gpio_0_4/system_axi_gpio_0_4.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_153A_Lab2/ECE_153A_Lab2.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_153A_Lab2/ECE_153A_Lab2.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_153A_Lab2/ECE_153A_Lab2.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_153A_Lab2/ECE_153A_Lab2.gen/sources_1/bd/system/ip/system_axi_quad_spi_0_0/system_axi_quad_spi_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_153A_Lab2/ECE_153A_Lab2.gen/sources_1/bd/system/ip/system_axi_quad_spi_0_0/system_axi_quad_spi_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_153A_Lab2/ECE_153A_Lab2.gen/sources_1/bd/system/ip/system_axi_quad_spi_0_0/system_axi_quad_spi_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_153A_Lab2/ECE_153A_Lab2.gen/sources_1/bd/system/ip/system_axi_quad_spi_0_0/system_axi_quad_spi_0_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_153A_Lab2/ECE_153A_Lab2.gen/sources_1/bd/system/system_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_153A_Lab2/ECE_153A_Lab2.gen/sources_1/bd/system/ip/system_microblaze_0_0/data/mb_bootloop_le.elf]
 

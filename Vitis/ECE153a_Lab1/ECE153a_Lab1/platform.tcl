@@ -28,3 +28,4 @@ platform generate -domains
 platform active {ECE153a_Lab1}
 platform active {ECE153A_Lab2}
 platform write
+platform active {ECE153a_Lab1}

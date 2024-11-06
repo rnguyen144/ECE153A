@@ -69,4 +69,13 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_axi_
 # IP: bd/system/ip/system_axi_gpio_0_3/system_axi_gpio_0_3.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_axi_gpio_0_3 || ORIG_REF_NAME==system_axi_gpio_0_3} -quiet] -quiet
 
+# IP: bd/system/ip/system_axi_gpio_0_4/system_axi_gpio_0_4.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_axi_gpio_0_4 || ORIG_REF_NAME==system_axi_gpio_0_4} -quiet] -quiet
+
+# IP: bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_clk_wiz_0_0 || ORIG_REF_NAME==system_clk_wiz_0_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_axi_quad_spi_0_0/system_axi_quad_spi_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_axi_quad_spi_0_0 || ORIG_REF_NAME==system_axi_quad_spi_0_0} -quiet] -quiet
+
 # XDC: c:/Users/ryand/OneDrive/Documents/Xilinx/ECE153A/Vivado/ECE_153A_Lab2/ECE_153A_Lab2.gen/sources_1/bd/system/system_ooc.xdc

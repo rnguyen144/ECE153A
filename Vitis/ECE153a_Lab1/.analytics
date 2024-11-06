@@ -330,3 +330,15 @@ timestamp=[2024-10-24 16:08:31], mode=BUILD, duration=0:00:01.929, duration_ms=1
 timestamp=[2024-10-24 16:09:59], mode=BUILD, duration=0:00:01.814, duration_ms=1814, data={name=Lab2, configuration=Debug, clean_build=false}
 timestamp=[2024-10-24 16:11:10], mode=BUILD, duration=0:00:02.056, duration_ms=2056, data={name=Lab2, configuration=Debug, clean_build=false}
 timestamp=[2024-10-24 16:49:46], mode=BUILD, duration=0:00:01.118, duration_ms=1118, data={name=Lab2, configuration=Debug, clean_build=false}
+timestamp=[2024-10-24 17:26:55], mode=BUILD, duration=0:00:03.096, duration_ms=3096, data={name=Lab2, configuration=Debug, clean_build=false}
+timestamp=[2024-10-24 17:28:14], mode=BUILD, duration=0:00:01.033, duration_ms=1033, data={name=Lab2, configuration=Debug, clean_build=false}
+timestamp=[2024-10-25 11:14:49], mode=WORKBENCH_START, duration=0:00:17.676, duration_ms=17676, data={}
+timestamp=[2024-10-25 11:14:53], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.634, duration_ms=1634, data={}
+timestamp=[2024-10-25 11:14:53], mode=WORKBENCH_UI_INIT, duration=0:00:03.828, duration_ms=3828, data={editors_count=13, platform_editors_count=4, projects_count=7, platform_projects_count=2, active_platform_editor=false, projects=ECE153A_Lab2,ECE153a_Lab1,Hello_World,Hello_World_system,Lab2,Lab2_system,RemoteSystemsTempFiles}
+timestamp=[2024-10-25 11:15:32], mode=BUILD, duration=0:00:00.759, duration_ms=759, data={name=Lab2, configuration=Debug, clean_build=false}
+timestamp=[2024-10-25 16:27:28], mode=BUILD, duration=0:00:03.801, duration_ms=3801, data={name=Lab2, configuration=Debug, clean_build=false}
+timestamp=[2024-11-05 09:43:23], mode=WORKBENCH_START, duration=0:06:43.972, duration_ms=403972, data={}
+timestamp=[2024-11-05 09:43:27], mode=WORKBENCH_UI_INIT, duration=0:00:03.707, duration_ms=3707, data={editors_count=14, platform_editors_count=4, projects_count=7, platform_projects_count=2, active_platform_editor=false, projects=ECE153A_Lab2,ECE153a_Lab1,Hello_World,Hello_World_system,Lab2,Lab2_system,RemoteSystemsTempFiles}
+timestamp=[2024-11-05 09:43:27], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.673, duration_ms=2673, data={}
+timestamp=[2024-11-05 09:59:20], mode=PLATFORM_CREATION, duration=0:00:15.275, duration_ms=15275, data={platform_source=dsa, os=standalone, processor=microblaze, platform=null}
+timestamp=[2024-11-05 16:34:06], mode=APP_CREATION, duration=0:00:01.368, duration_ms=1368, data={name=Lab2b, project_type=sdk, os=standalone, processor=microblaze_0, runtime=C/C++, platform=ECE153A_Lab2b, application_type=application}

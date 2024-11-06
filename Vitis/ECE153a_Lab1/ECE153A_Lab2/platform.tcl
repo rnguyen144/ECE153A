@@ -33,3 +33,4 @@ bsp write
 bsp reload
 catch {bsp regenerate}
 platform generate
+platform active {ECE153A_Lab2}
